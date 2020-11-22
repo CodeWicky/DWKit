@@ -1,0 +1,6 @@
+target 'DWKitDemo' do
+pod 'DWKit', :path => '../'
+pod 'DWAlbumGridController'
+pod 'Masonry', '~> 1.1.0'
+#pod 'DWKit', '~> 0.0.0.11'
+end

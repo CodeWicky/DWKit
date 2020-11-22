@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B2172F5246E9B3B00C00B13 /* DWDateUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2172F4246E9B3B00C00B13 /* DWDateUtilsVC.m */; };
+		9B2172F8246E9BF100C00B13 /* DWGradientViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2172F7246E9BF100C00B13 /* DWGradientViewVC.m */; };
+		9B4CFABB23238DFC0016F8B2 /* DWManualOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4CFABA23238DFC0016F8B2 /* DWManualOperationVC.m */; };
+		9B4E1F072322B73D0033124E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F062322B73D0033124E /* AppDelegate.m */; };
+		9B4E1F0A2322B73D0033124E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F092322B73D0033124E /* ViewController.m */; };
+		9B4E1F0D2322B73D0033124E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E1F0B2322B73D0033124E /* Main.storyboard */; };
+		9B4E1F0F2322B73F0033124E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E1F0E2322B73F0033124E /* Assets.xcassets */; };
+		9B4E1F122322B73F0033124E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E1F102322B73F0033124E /* LaunchScreen.storyboard */; };
+		9B4E1F152322B73F0033124E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F142322B73F0033124E /* main.m */; };
+		9B4E1F1D2322BA2F0033124E /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F1C2322BA2F0033124E /* DemoListViewController.m */; };
+		9B4E1F1F2322BAFD0033124E /* DWDemoConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E1F1E2322BAFD0033124E /* DWDemoConfig.plist */; };
+		9B4E1F232322BB640033124E /* DWOperationCancelFlagVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F222322BB640033124E /* DWOperationCancelFlagVC.m */; };
+		9B4E1F262322BFB10033124E /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F252322BFB10033124E /* DemoBaseViewController.m */; };
+		9B55C2382402E63E00C496BE /* DWAlbumManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B55C2372402E63E00C496BE /* DWAlbumManagerVC.m */; };
+		9B58004924A893CD0092691F /* DWCameraManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58004824A893CD0092691F /* DWCameraManagerVC.m */; };
+		9B588F7A23BDDDA3000A2C2C /* DWLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B588F7923BDDDA3000A2C2C /* DWLabelVC.m */; };
+		9B62938E233F84D900A02FFC /* DWDispatcherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62938D233F84D900A02FFC /* DWDispatcherVC.m */; };
+		9B6C952623328788001EED5D /* DWArrayUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6C952523328788001EED5D /* DWArrayUtilsVC.m */; };
+		9B6C952A2333D7CC001EED5D /* DWDeviceUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6C95292333D7CC001EED5D /* DWDeviceUtilsVC.m */; };
+		9B72BF0E232AB739005B9C7C /* DWTransactionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B72BF0D232AB739005B9C7C /* DWTransactionVC.m */; };
+		9B92062F2431EF6F00DAA1B1 /* DWThreadUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B92062E2431EF6F00DAA1B1 /* DWThreadUtilsVC.m */; };
+		9BA570D5232B87B700F593BE /* DemoBaseActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA570D4232B87B700F593BE /* DemoBaseActionViewController.m */; };
+		9BA570DA232B8B5200F593BE /* DWFileManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA570D9232B8B5200F593BE /* DWFileManagerVC.m */; };
+		9BBE6C18245ABB8500E16854 /* DWObjectUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE6C17245ABB8500E16854 /* DWObjectUtilsVC.m */; };
+		9BBE6C1C245AC0DD00E16854 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE6C1B245AC0DD00E16854 /* A.m */; };
+		9BBE6C1F245AC0E200E16854 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE6C1E245AC0E200E16854 /* B.m */; };
+		9BBE6C24245B1E1A00E16854 /* DWStringUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE6C23245B1E1A00E16854 /* DWStringUtilsVC.m */; };
+		9BF910ED24852D630011C534 /* DWTaskQueueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF910EC24852D620011C534 /* DWTaskQueueVC.m */; };
+		9BF910F02485360F0011C534 /* DWLimitArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF910EF2485360F0011C534 /* DWLimitArrayVC.m */; };
+		9BFC16CC24018CE700C852FF /* DWFixAdjustCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC16CB24018CE700C852FF /* DWFixAdjustCollectionViewVC.m */; };
+		9BFC16CF24018EAD00C852FF /* DemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC16CE24018EAD00C852FF /* DemoCollectionViewController.m */; };
+		9BFC16D224019B9700C852FF /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC16D124019B9700C852FF /* GridViewController.m */; };
+		A04D6DC44A5166C71D518AD1 /* libPods-DWKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBA1C0EB578E1E9AF17D0BB /* libPods-DWKitDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AB1903A45E16CC2CC049F6A /* Pods-DWKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWKitDemo.release.xcconfig"; path = "Target Support Files/Pods-DWKitDemo/Pods-DWKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8DBA1C0EB578E1E9AF17D0BB /* libPods-DWKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DWKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2172F3246E9B3B00C00B13 /* DWDateUtilsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWDateUtilsVC.h; sourceTree = "<group>"; };
+		9B2172F4246E9B3B00C00B13 /* DWDateUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWDateUtilsVC.m; sourceTree = "<group>"; };
+		9B2172F6246E9BF100C00B13 /* DWGradientViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWGradientViewVC.h; sourceTree = "<group>"; };
+		9B2172F7246E9BF100C00B13 /* DWGradientViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWGradientViewVC.m; sourceTree = "<group>"; };
+		9B4CFAB923238DFC0016F8B2 /* DWManualOperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWManualOperationVC.h; sourceTree = "<group>"; };
+		9B4CFABA23238DFC0016F8B2 /* DWManualOperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWManualOperationVC.m; sourceTree = "<group>"; };
+		9B4E1F022322B73D0033124E /* DWKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4E1F052322B73D0033124E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B4E1F062322B73D0033124E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B4E1F082322B73D0033124E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B4E1F092322B73D0033124E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B4E1F0C2322B73D0033124E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B4E1F0E2322B73F0033124E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B4E1F112322B73F0033124E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B4E1F132322B73F0033124E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4E1F142322B73F0033124E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B4E1F1B2322BA2F0033124E /* DemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoListViewController.h; sourceTree = "<group>"; };
+		9B4E1F1C2322BA2F0033124E /* DemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoListViewController.m; sourceTree = "<group>"; };
+		9B4E1F1E2322BAFD0033124E /* DWDemoConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DWDemoConfig.plist; sourceTree = "<group>"; };
+		9B4E1F212322BB640033124E /* DWOperationCancelFlagVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWOperationCancelFlagVC.h; sourceTree = "<group>"; };
+		9B4E1F222322BB640033124E /* DWOperationCancelFlagVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWOperationCancelFlagVC.m; sourceTree = "<group>"; };
+		9B4E1F242322BFB10033124E /* DemoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoBaseViewController.h; sourceTree = "<group>"; };
+		9B4E1F252322BFB10033124E /* DemoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoBaseViewController.m; sourceTree = "<group>"; };
+		9B55C2362402E63E00C496BE /* DWAlbumManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAlbumManagerVC.h; sourceTree = "<group>"; };
+		9B55C2372402E63E00C496BE /* DWAlbumManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWAlbumManagerVC.m; sourceTree = "<group>"; };
+		9B58004724A893CD0092691F /* DWCameraManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWCameraManagerVC.h; sourceTree = "<group>"; };
+		9B58004824A893CD0092691F /* DWCameraManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWCameraManagerVC.m; sourceTree = "<group>"; };
+		9B588F7823BDDDA3000A2C2C /* DWLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWLabelVC.h; sourceTree = "<group>"; };
+		9B588F7923BDDDA3000A2C2C /* DWLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWLabelVC.m; sourceTree = "<group>"; };
+		9B62938C233F84D900A02FFC /* DWDispatcherVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWDispatcherVC.h; sourceTree = "<group>"; };
+		9B62938D233F84D900A02FFC /* DWDispatcherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWDispatcherVC.m; sourceTree = "<group>"; };
+		9B6C952423328788001EED5D /* DWArrayUtilsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWArrayUtilsVC.h; sourceTree = "<group>"; };
+		9B6C952523328788001EED5D /* DWArrayUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWArrayUtilsVC.m; sourceTree = "<group>"; };
+		9B6C95282333D7CC001EED5D /* DWDeviceUtilsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWDeviceUtilsVC.h; sourceTree = "<group>"; };
+		9B6C95292333D7CC001EED5D /* DWDeviceUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWDeviceUtilsVC.m; sourceTree = "<group>"; };
+		9B72BF0C232AB739005B9C7C /* DWTransactionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWTransactionVC.h; sourceTree = "<group>"; };
+		9B72BF0D232AB739005B9C7C /* DWTransactionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWTransactionVC.m; sourceTree = "<group>"; };
+		9B92062D2431EF6F00DAA1B1 /* DWThreadUtilsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWThreadUtilsVC.h; sourceTree = "<group>"; };
+		9B92062E2431EF6F00DAA1B1 /* DWThreadUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWThreadUtilsVC.m; sourceTree = "<group>"; };
+		9BA570D3232B87B700F593BE /* DemoBaseActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoBaseActionViewController.h; sourceTree = "<group>"; };
+		9BA570D4232B87B700F593BE /* DemoBaseActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoBaseActionViewController.m; sourceTree = "<group>"; };
+		9BA570D8232B8B5200F593BE /* DWFileManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWFileManagerVC.h; sourceTree = "<group>"; };
+		9BA570D9232B8B5200F593BE /* DWFileManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWFileManagerVC.m; sourceTree = "<group>"; };
+		9BBE6C16245ABB8500E16854 /* DWObjectUtilsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWObjectUtilsVC.h; sourceTree = "<group>"; };
+		9BBE6C17245ABB8500E16854 /* DWObjectUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWObjectUtilsVC.m; sourceTree = "<group>"; };
+		9BBE6C1A245AC0DD00E16854 /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		9BBE6C1B245AC0DD00E16854 /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		9BBE6C1D245AC0E200E16854 /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		9BBE6C1E245AC0E200E16854 /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		9BBE6C22245B1E1A00E16854 /* DWStringUtilsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWStringUtilsVC.h; sourceTree = "<group>"; };
+		9BBE6C23245B1E1A00E16854 /* DWStringUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWStringUtilsVC.m; sourceTree = "<group>"; };
+		9BF910EB24852D620011C534 /* DWTaskQueueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWTaskQueueVC.h; sourceTree = "<group>"; };
+		9BF910EC24852D620011C534 /* DWTaskQueueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWTaskQueueVC.m; sourceTree = "<group>"; };
+		9BF910EE2485360E0011C534 /* DWLimitArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWLimitArrayVC.h; sourceTree = "<group>"; };
+		9BF910EF2485360F0011C534 /* DWLimitArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWLimitArrayVC.m; sourceTree = "<group>"; };
+		9BFC16CA24018CE700C852FF /* DWFixAdjustCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWFixAdjustCollectionViewVC.h; sourceTree = "<group>"; };
+		9BFC16CB24018CE700C852FF /* DWFixAdjustCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWFixAdjustCollectionViewVC.m; sourceTree = "<group>"; };
+		9BFC16CD24018EAD00C852FF /* DemoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCollectionViewController.h; sourceTree = "<group>"; };
+		9BFC16CE24018EAD00C852FF /* DemoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCollectionViewController.m; sourceTree = "<group>"; };
+		9BFC16D024019B9700C852FF /* GridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		9BFC16D124019B9700C852FF /* GridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
+		C071715B7BF7279B226102D1 /* Pods-DWKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-DWKitDemo/Pods-DWKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B4E1EFF2322B73D0033124E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04D6DC44A5166C71D518AD1 /* libPods-DWKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1097BCE1B61987D720FF4C90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA1C0EB578E1E9AF17D0BB /* libPods-DWKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B2172F1246E9AAA00C00B13 /* DWDateUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9B2172F3246E9B3B00C00B13 /* DWDateUtilsVC.h */,
+				9B2172F4246E9B3B00C00B13 /* DWDateUtilsVC.m */,
+			);
+			path = DWDateUtils;
+			sourceTree = "<group>";
+		};
+		9B2172F2246E9ADF00C00B13 /* DWGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				9B2172F6246E9BF100C00B13 /* DWGradientViewVC.h */,
+				9B2172F7246E9BF100C00B13 /* DWGradientViewVC.m */,
+			);
+			path = DWGradientView;
+			sourceTree = "<group>";
+		};
+		9B4CFAB823238D4C0016F8B2 /* DWManualOperation */ = {
+			isa = PBXGroup;
+			children = (
+				9B4CFAB923238DFC0016F8B2 /* DWManualOperationVC.h */,
+				9B4CFABA23238DFC0016F8B2 /* DWManualOperationVC.m */,
+			);
+			path = DWManualOperation;
+			sourceTree = "<group>";
+		};
+		9B4E1EF92322B73D0033124E = {
+			isa = PBXGroup;
+			children = (
+				9B4E1F042322B73D0033124E /* DWKitDemo */,
+				9B4E1F032322B73D0033124E /* Products */,
+				DD41F4D411B3D53BC89A1077 /* Pods */,
+				1097BCE1B61987D720FF4C90 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B4E1F032322B73D0033124E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B4E1F022322B73D0033124E /* DWKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B4E1F042322B73D0033124E /* DWKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9BA570D6232B8B1400F593BE /* DWCategory */,
+				9B72BF0F232ABBE5005B9C7C /* DWUtils */,
+				9B588F7723BDDD3A000A2C2C /* DWComponent */,
+				9B4E1F052322B73D0033124E /* AppDelegate.h */,
+				9B4E1F062322B73D0033124E /* AppDelegate.m */,
+				9B4E1F082322B73D0033124E /* ViewController.h */,
+				9B4E1F092322B73D0033124E /* ViewController.m */,
+				9B4E1F242322BFB10033124E /* DemoBaseViewController.h */,
+				9B4E1F252322BFB10033124E /* DemoBaseViewController.m */,
+				9BA570D3232B87B700F593BE /* DemoBaseActionViewController.h */,
+				9BA570D4232B87B700F593BE /* DemoBaseActionViewController.m */,
+				9B4E1F1B2322BA2F0033124E /* DemoListViewController.h */,
+				9B4E1F1C2322BA2F0033124E /* DemoListViewController.m */,
+				9B4E1F1E2322BAFD0033124E /* DWDemoConfig.plist */,
+				9B4E1F0B2322B73D0033124E /* Main.storyboard */,
+				9B4E1F0E2322B73F0033124E /* Assets.xcassets */,
+				9B4E1F102322B73F0033124E /* LaunchScreen.storyboard */,
+				9B4E1F132322B73F0033124E /* Info.plist */,
+				9B4E1F142322B73F0033124E /* main.m */,
+			);
+			path = DWKitDemo;
+			sourceTree = "<group>";
+		};
+		9B4E1F202322BB3E0033124E /* DWOperationCancelFlag */ = {
+			isa = PBXGroup;
+			children = (
+				9B4E1F212322BB640033124E /* DWOperationCancelFlagVC.h */,
+				9B4E1F222322BB640033124E /* DWOperationCancelFlagVC.m */,
+			);
+			path = DWOperationCancelFlag;
+			sourceTree = "<group>";
+		};
+		9B55C2352402E5CB00C496BE /* DWAlbumManager */ = {
+			isa = PBXGroup;
+			children = (
+				9B55C2362402E63E00C496BE /* DWAlbumManagerVC.h */,
+				9B55C2372402E63E00C496BE /* DWAlbumManagerVC.m */,
+			);
+			path = DWAlbumManager;
+			sourceTree = "<group>";
+		};
+		9B58004624A890570092691F /* DWCameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				9B58004724A893CD0092691F /* DWCameraManagerVC.h */,
+				9B58004824A893CD0092691F /* DWCameraManagerVC.m */,
+			);
+			path = DWCameraManager;
+			sourceTree = "<group>";
+		};
+		9B588F7623BDDD31000A2C2C /* DWLabel */ = {
+			isa = PBXGroup;
+			children = (
+				9B588F7823BDDDA3000A2C2C /* DWLabelVC.h */,
+				9B588F7923BDDDA3000A2C2C /* DWLabelVC.m */,
+			);
+			path = DWLabel;
+			sourceTree = "<group>";
+		};
+		9B588F7723BDDD3A000A2C2C /* DWComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9B2172F2246E9ADF00C00B13 /* DWGradientView */,
+				9BFC16C924018C9B00C852FF /* DWFixAdjustCollectionView */,
+				9B588F7623BDDD31000A2C2C /* DWLabel */,
+			);
+			path = DWComponent;
+			sourceTree = "<group>";
+		};
+		9B62938B233F84B900A02FFC /* DWDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				9B62938C233F84D900A02FFC /* DWDispatcherVC.h */,
+				9B62938D233F84D900A02FFC /* DWDispatcherVC.m */,
+			);
+			path = DWDispatcher;
+			sourceTree = "<group>";
+		};
+		9B6C952323328700001EED5D /* DWArrayUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9B6C952423328788001EED5D /* DWArrayUtilsVC.h */,
+				9B6C952523328788001EED5D /* DWArrayUtilsVC.m */,
+			);
+			path = DWArrayUtils;
+			sourceTree = "<group>";
+		};
+		9B6C95272333D777001EED5D /* DWDeviceUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9B6C95282333D7CC001EED5D /* DWDeviceUtilsVC.h */,
+				9B6C95292333D7CC001EED5D /* DWDeviceUtilsVC.m */,
+			);
+			path = DWDeviceUtils;
+			sourceTree = "<group>";
+		};
+		9B72BF0B232AB70E005B9C7C /* DWTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				9B72BF0C232AB739005B9C7C /* DWTransactionVC.h */,
+				9B72BF0D232AB739005B9C7C /* DWTransactionVC.m */,
+			);
+			path = DWTransaction;
+			sourceTree = "<group>";
+		};
+		9B72BF0F232ABBE5005B9C7C /* DWUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9B58004624A890570092691F /* DWCameraManager */,
+				9BF910EA24852D230011C534 /* DWLimitArray */,
+				9BF910E924852CDD0011C534 /* DWTaskQueue */,
+				9B55C2352402E5CB00C496BE /* DWAlbumManager */,
+				9B62938B233F84B900A02FFC /* DWDispatcher */,
+				9BA570D7232B8B2C00F593BE /* DWFileManager */,
+				9B4E1F202322BB3E0033124E /* DWOperationCancelFlag */,
+				9B4CFAB823238D4C0016F8B2 /* DWManualOperation */,
+				9B72BF0B232AB70E005B9C7C /* DWTransaction */,
+			);
+			path = DWUtils;
+			sourceTree = "<group>";
+		};
+		9B92062C2431EF4300DAA1B1 /* DWThreadUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9B92062D2431EF6F00DAA1B1 /* DWThreadUtilsVC.h */,
+				9B92062E2431EF6F00DAA1B1 /* DWThreadUtilsVC.m */,
+			);
+			path = DWThreadUtils;
+			sourceTree = "<group>";
+		};
+		9BA570D6232B8B1400F593BE /* DWCategory */ = {
+			isa = PBXGroup;
+			children = (
+				9B2172F1246E9AAA00C00B13 /* DWDateUtils */,
+				9BBE6C21245B1DAD00E16854 /* DWStringUtils */,
+				9BBE6C15245ABA3F00E16854 /* DWObjectUtils */,
+				9B92062C2431EF4300DAA1B1 /* DWThreadUtils */,
+				9B6C95272333D777001EED5D /* DWDeviceUtils */,
+				9B6C952323328700001EED5D /* DWArrayUtils */,
+			);
+			path = DWCategory;
+			sourceTree = "<group>";
+		};
+		9BA570D7232B8B2C00F593BE /* DWFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				9BA570D8232B8B5200F593BE /* DWFileManagerVC.h */,
+				9BA570D9232B8B5200F593BE /* DWFileManagerVC.m */,
+			);
+			path = DWFileManager;
+			sourceTree = "<group>";
+		};
+		9BBE6C15245ABA3F00E16854 /* DWObjectUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9BBE6C19245AC0D200E16854 /* Model */,
+				9BBE6C16245ABB8500E16854 /* DWObjectUtilsVC.h */,
+				9BBE6C17245ABB8500E16854 /* DWObjectUtilsVC.m */,
+			);
+			path = DWObjectUtils;
+			sourceTree = "<group>";
+		};
+		9BBE6C19245AC0D200E16854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BBE6C1A245AC0DD00E16854 /* A.h */,
+				9BBE6C1B245AC0DD00E16854 /* A.m */,
+				9BBE6C1D245AC0E200E16854 /* B.h */,
+				9BBE6C1E245AC0E200E16854 /* B.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BBE6C21245B1DAD00E16854 /* DWStringUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9BBE6C22245B1E1A00E16854 /* DWStringUtilsVC.h */,
+				9BBE6C23245B1E1A00E16854 /* DWStringUtilsVC.m */,
+			);
+			path = DWStringUtils;
+			sourceTree = "<group>";
+		};
+		9BF910E924852CDD0011C534 /* DWTaskQueue */ = {
+			isa = PBXGroup;
+			children = (
+				9BF910EB24852D620011C534 /* DWTaskQueueVC.h */,
+				9BF910EC24852D620011C534 /* DWTaskQueueVC.m */,
+			);
+			path = DWTaskQueue;
+			sourceTree = "<group>";
+		};
+		9BF910EA24852D230011C534 /* DWLimitArray */ = {
+			isa = PBXGroup;
+			children = (
+				9BF910EE2485360E0011C534 /* DWLimitArrayVC.h */,
+				9BF910EF2485360F0011C534 /* DWLimitArrayVC.m */,
+			);
+			path = DWLimitArray;
+			sourceTree = "<group>";
+		};
+		9BFC16C924018C9B00C852FF /* DWFixAdjustCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9BFC16CA24018CE700C852FF /* DWFixAdjustCollectionViewVC.h */,
+				9BFC16CB24018CE700C852FF /* DWFixAdjustCollectionViewVC.m */,
+				9BFC16CD24018EAD00C852FF /* DemoCollectionViewController.h */,
+				9BFC16CE24018EAD00C852FF /* DemoCollectionViewController.m */,
+				9BFC16D024019B9700C852FF /* GridViewController.h */,
+				9BFC16D124019B9700C852FF /* GridViewController.m */,
+			);
+			path = DWFixAdjustCollectionView;
+			sourceTree = "<group>";
+		};
+		DD41F4D411B3D53BC89A1077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C071715B7BF7279B226102D1 /* Pods-DWKitDemo.debug.xcconfig */,
+				4AB1903A45E16CC2CC049F6A /* Pods-DWKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B4E1F012322B73D0033124E /* DWKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4E1F182322B73F0033124E /* Build configuration list for PBXNativeTarget "DWKitDemo" */;
+			buildPhases = (
+				2105DB77A0DC27B06F526970 /* [CP] Check Pods Manifest.lock */,
+				9B4E1EFE2322B73D0033124E /* Sources */,
+				9B4E1EFF2322B73D0033124E /* Frameworks */,
+				9B4E1F002322B73D0033124E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWKitDemo;
+			productName = DWKitDemo;
+			productReference = 9B4E1F022322B73D0033124E /* DWKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B4E1EFA2322B73D0033124E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Wicky;
+				TargetAttributes = {
+					9B4E1F012322B73D0033124E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B4E1EFD2322B73D0033124E /* Build configuration list for PBXProject "DWKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B4E1EF92322B73D0033124E;
+			productRefGroup = 9B4E1F032322B73D0033124E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B4E1F012322B73D0033124E /* DWKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B4E1F002322B73D0033124E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4E1F122322B73F0033124E /* LaunchScreen.storyboard in Resources */,
+				9B4E1F0F2322B73F0033124E /* Assets.xcassets in Resources */,
+				9B4E1F1F2322BAFD0033124E /* DWDemoConfig.plist in Resources */,
+				9B4E1F0D2322B73D0033124E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2105DB77A0DC27B06F526970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DWKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B4E1EFE2322B73D0033124E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B62938E233F84D900A02FFC /* DWDispatcherVC.m in Sources */,
+				9B4E1F262322BFB10033124E /* DemoBaseViewController.m in Sources */,
+				9BA570D5232B87B700F593BE /* DemoBaseActionViewController.m in Sources */,
+				9B55C2382402E63E00C496BE /* DWAlbumManagerVC.m in Sources */,
+				9B4CFABB23238DFC0016F8B2 /* DWManualOperationVC.m in Sources */,
+				9B2172F8246E9BF100C00B13 /* DWGradientViewVC.m in Sources */,
+				9B4E1F0A2322B73D0033124E /* ViewController.m in Sources */,
+				9BFC16D224019B9700C852FF /* GridViewController.m in Sources */,
+				9B4E1F152322B73F0033124E /* main.m in Sources */,
+				9B6C952A2333D7CC001EED5D /* DWDeviceUtilsVC.m in Sources */,
+				9B58004924A893CD0092691F /* DWCameraManagerVC.m in Sources */,
+				9BBE6C1C245AC0DD00E16854 /* A.m in Sources */,
+				9B92062F2431EF6F00DAA1B1 /* DWThreadUtilsVC.m in Sources */,
+				9BFC16CC24018CE700C852FF /* DWFixAdjustCollectionViewVC.m in Sources */,
+				9B4E1F072322B73D0033124E /* AppDelegate.m in Sources */,
+				9BF910ED24852D630011C534 /* DWTaskQueueVC.m in Sources */,
+				9BBE6C18245ABB8500E16854 /* DWObjectUtilsVC.m in Sources */,
+				9BFC16CF24018EAD00C852FF /* DemoCollectionViewController.m in Sources */,
+				9B6C952623328788001EED5D /* DWArrayUtilsVC.m in Sources */,
+				9B588F7A23BDDDA3000A2C2C /* DWLabelVC.m in Sources */,
+				9BF910F02485360F0011C534 /* DWLimitArrayVC.m in Sources */,
+				9B4E1F1D2322BA2F0033124E /* DemoListViewController.m in Sources */,
+				9B72BF0E232AB739005B9C7C /* DWTransactionVC.m in Sources */,
+				9B4E1F232322BB640033124E /* DWOperationCancelFlagVC.m in Sources */,
+				9BBE6C1F245AC0E200E16854 /* B.m in Sources */,
+				9B2172F5246E9B3B00C00B13 /* DWDateUtilsVC.m in Sources */,
+				9BBE6C24245B1E1A00E16854 /* DWStringUtilsVC.m in Sources */,
+				9BA570DA232B8B5200F593BE /* DWFileManagerVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B4E1F0B2322B73D0033124E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4E1F0C2322B73D0033124E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B4E1F102322B73F0033124E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4E1F112322B73F0033124E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B4E1F162322B73F0033124E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B4E1F172322B73F0033124E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B4E1F192322B73F0033124E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C071715B7BF7279B226102D1 /* Pods-DWKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HD75Y5AXQ;
+				INFOPLIST_FILE = DWKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wicky.DWKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B4E1F1A2322B73F0033124E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB1903A45E16CC2CC049F6A /* Pods-DWKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HD75Y5AXQ;
+				INFOPLIST_FILE = DWKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wicky.DWKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B4E1EFD2322B73D0033124E /* Build configuration list for PBXProject "DWKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4E1F162322B73F0033124E /* Debug */,
+				9B4E1F172322B73F0033124E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4E1F182322B73F0033124E /* Build configuration list for PBXNativeTarget "DWKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4E1F192322B73F0033124E /* Debug */,
+				9B4E1F1A2322B73F0033124E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B4E1EFA2322B73D0033124E /* Project object */;
+}

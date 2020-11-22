@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DWCategory</key>
+	<array>
+		<string>DWArrayUtils</string>
+		<string>DWDateUtils</string>
+		<string>DWDeviceUtils</string>
+		<string>DWObjectUtils</string>
+		<string>DWStringUtils</string>
+		<string>DWThreadUtils</string>
+	</array>
+	<key>DWUtils</key>
+	<array>
+		<string>DWAlbumManager</string>
+		<string>DWCameraManager</string>
+		<string>DWDispatcher</string>
+		<string>DWFileManager</string>
+		<string>DWLimitArray</string>
+		<string>DWManualOperation</string>
+		<string>DWOperationCancelFlag</string>
+		<string>DWTaskQueue</string>
+		<string>DWTransaction</string>
+	</array>
+	<key>DWComponent</key>
+	<array>
+		<string>DWFixAdjustCollectionView</string>
+		<string>DWGradientView</string>
+		<string>DWLabel</string>
+	</array>
+</dict>
+</plist>

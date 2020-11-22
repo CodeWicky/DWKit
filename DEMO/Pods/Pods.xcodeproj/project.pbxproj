@@ -1,0 +1,1301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A74680988BF0BD5E895EC23E3132E87E /* MASLayoutConstraint.m */; };
+		00E2698C41A7A03745C366044C2AF290 /* DWLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BDD9C2E62EC26EA2DD84265D27E801 /* DWLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0DE0D4F817A247F61AE8E2EF0DD63310 /* DWGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AFB2FB9D68E73935089F38FCC71CCA /* DWGradientView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0DE0EE4FA5E3FBF8912DBF465BB8DA52 /* DWFixAdjustCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D11ED4A29415E2BD60951189B26A54F7 /* DWFixAdjustCollectionView.m */; };
+		0EFE674565D45AF3FE6C9B1CBC8922E4 /* DWAlbumSelectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A93F63606986436DD3E1BC2FD8EC0265 /* DWAlbumSelectionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F4CFE80FE29D09ACB89F70ECE34F1A6 /* DWAlbumManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30FDC4766732EC184610AE3D96308A71 /* DWAlbumManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = CF89891EA9F4632F97669A89FDA26119 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11D0BB292BB31DD49E4321B1ED1E23F5 /* NSDate+DWDateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 399FF4489E9661A16A4A05050AA79E96 /* NSDate+DWDateUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		172FD8EBAB3192D58016F20D45C81A27 /* DWDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4561DA2B8A43A32058CFAB41292D7240 /* DWDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19F88544C8D656B2C513AFDB603DBE76 /* DWCameraManagerLibraryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539F1C935B725ACEFED6281AF0DDA80 /* DWCameraManagerLibraryHelper.m */; };
+		1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 90973BBC3C3C8B781041EC322F037086 /* MASConstraintMaker.m */; };
+		201BBB9AABA7C5DB791BBDD0F9029165 /* DWAlbumGridController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B254876DADF70F296919094F100EB3 /* DWAlbumGridController-dummy.m */; };
+		21AB78157D15E366D0321AE95F0301B9 /* NSObject+DWObjectUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8838BFE5FB89B7C4A34B43F5E7A542F2 /* NSObject+DWObjectUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23059C61175B44394217C2D0687797AF /* NSThread+DWThreadUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B61EDEB56D75161E0C0FC29E276EEB99 /* NSThread+DWThreadUtils.m */; };
+		2483A6A805677356636D09ACF1DD2A20 /* NSArray+DWArrayUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DFA3FFB36863F2F050474BD75A23ECF /* NSArray+DWArrayUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24A1FE3F6A2081C1B481C66194AEBDB5 /* DWAlbumMediaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB58491621FF5080E301A288E01CD731 /* DWAlbumMediaHelper.m */; };
+		278ECFC8045634EECB398C33B489B392 /* NSObject+DWObjectUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 002880C0E19448C6749C2CECEB36E383 /* NSObject+DWObjectUtils.m */; };
+		38B7DD4E0D75D92B4FDD706DE81743FC /* Pods-DWKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A3785F3930EE82D2AB761C29544572 /* Pods-DWKitDemo-dummy.m */; };
+		38C7EAFB5EFA951DE8ED56F5BB88D06E /* DWCameraManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB045310ACEFFB3FCA8A4A7ADDAC18A4 /* DWCameraManagerDelegate.m */; };
+		39E37B4DA579F1D379A1BAF43E0BE0DB /* DWDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5236EA0D8A17E8EFBFADC67904B51 /* DWDispatcher.m */; };
+		3E15A093B862814C99B3E9ADB6F7AB28 /* DWAlbumSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4F915142113093F4B2DB2047F11DE /* DWAlbumSelectionManager.m */; };
+		42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9895F3D70749F901F18AF4B1859EC4 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		43694D739ABB21CCB7650BA5877A85BF /* DWTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E51A2FB7523D5AF61A56F89A9FF5B699 /* DWTransaction.m */; };
+		44C84AA7207C64402BFE405F7B4D9825 /* DWFixAdjustCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18286576AA95A01854DADCDE310E5FC6 /* DWFixAdjustCollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45EE4BC1B667656F07EFFB88FEC8E6DB /* DWAlbumGridController.h in Headers */ = {isa = PBXBuildFile; fileRef = 111EFA73E2C453222DE004E2B8287B57 /* DWAlbumGridController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E9F13D80939D1079EF21DBF2E17C30 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CBFE9A16F41053F5BEFA91B0A59550D3 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5110E624D8DDECA439A264C15DD6D418 /* DWCameraManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E855B958FC6E5375AE0DC13F8D748641 /* DWCameraManagerDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		528D695B6AAC4424120F27506C68C2BA /* DWCameraManagerLibraryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 83539BCAC4A668CC21DE7098C65E889F /* DWCameraManagerLibraryHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54DF1CD8212FF412DA618EF28C23B0DB /* DWOperationCancelFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A196DE8E1B4D9B035121EEEC3BCBDD /* DWOperationCancelFlag.m */; };
+		54E85EA8EB482CF81255C3A0CAFDCC17 /* UIDevice+DWDeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 118CAA25805DA751E87AE6634B5338B4 /* UIDevice+DWDeviceUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CBC05C24C72F1B74299FBB8356356 /* MASViewConstraint.m */; };
+		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E99C567A55851BF538A1F435B2EAADA /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		5C350B98AE780C86FDB12C41C577E912 /* DWAlbumGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DFE4D4EBAB55C06DBD2D967B03CFA /* DWAlbumGridCell.m */; };
+		5D3B2396760FC116056E96602F9E972E /* DWCameraManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD4D3B91C5C7E4FE2445B3D546D7D1 /* DWCameraManagerView.m */; };
+		63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D23FFDC1E9F9A16ED79180BD0524329D /* MASCompositeConstraint.m */; };
+		65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE66014F7B4DCB9CE2C62D618DA683EE /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		692496FEFDF251EB392B10928C6BD052 /* DWCameraManagerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3D7E8074203AE13F744FFF84D52FCF /* DWCameraManagerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		694ECC98560861327FBFBA8B117888E9 /* DWAlbumGridControllerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 562168D4C4B5E1947A970C1BF2A59653 /* DWAlbumGridControllerHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C2E52EF825BA7300B7ED6ADA0A77AB6 /* DWLimitArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBF18655B5338D2B0FE665B7EF77F1A /* DWLimitArray.m */; };
+		75F5A5321057488FF042EAEE8A1019E4 /* NSDate+DWDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BA76543DB14A72585DAB17815C9E4B /* NSDate+DWDateUtils.m */; };
+		7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DF54B8F8C6151CC13597B0E43BAF3AE9 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80D68CD52DEFCDFA0A3CC7023D1465D2 /* DWAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E7D97ACE75D56EDCE38DD936342612 /* DWAlbumManager.m */; };
+		81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EF5515EC1CFF62F16A9770AAF83FBC08 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83ECBD950C31CD944FABF1FC834433D7 /* DWKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A829B68587E952E5486F6E780F01E12 /* DWKit-dummy.m */; };
+		89EDACA29B512EAEEA1404B803201597 /* NSThread+DWThreadUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FD140E52BB40E69792085D9B92391EB9 /* NSThread+DWThreadUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FB9A2AA41FFBE0D78BB760729027B85 /* DWAlbumGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A05D238664648C9F55D6488E1AE55 /* DWAlbumGridController.m */; };
+		9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E47003B547AB04F6D1D5DA29D06BB0 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D2464C4702B2D041F9524243FD2113 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB80F737939A3488DC4F31F3CD06B27 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 98459D16B6C4988C1BA094EC96D6516F /* MASViewAttribute.m */; };
+		A942AE56C916A66989F6620C88C00AC0 /* DWFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F188ADA35D8C24F5BD15F46F18028EB /* DWFileManager.m */; };
+		AA18992123E33AF96DC38981CE67B6ED /* DWGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1363F3677E2C14C9730BA3FB1E3D2C3D /* DWGradientView.m */; };
+		AB2DCF1C396732A03CA0CAE2A57F227D /* DWLimitArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 167302E73BBEB63E2F25851949DFCFB0 /* DWLimitArray.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD3BA5E718A9EDB8CC575B167F7FCBBB /* DWManualOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCACCF85A7756708306490DB19CF0CF /* DWManualOperation.m */; };
+		ADC22B6CB6CC6C83FDF4D1C59EAAE5B6 /* DWOperationCancelFlag.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B36727A2631B5D0DF37301BA18FD8AD /* DWOperationCancelFlag.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 313EF5F65BCB6AFB30BB3F3FDBD1F76A /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B52D6AAE204DDE0B0531DBB023813A94 /* NSArray+DWArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE3B1AE019C360B79D41BF96A2AD07 /* NSArray+DWArrayUtils.m */; };
+		B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62670D8008DDC9CE006F4048FB54C6AC /* NSArray+MASAdditions.m */; };
+		C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89923C615F7709A3FCB4457D2FC155 /* ViewController+MASAdditions.m */; };
+		C0DB89EA8D25B9CBAEB2EE69EA7E4ED1 /* NSString+DWStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 77E77E4456550FCB3D5CDBD58452AF9C /* NSString+DWStringUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3A1D5F656F354D858EF1C4814A39ABA /* DWManualOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D72D8B389A732C73A6ED41678EC42E64 /* DWManualOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C404709FC697F59DDABDB3338BB3B032 /* DWAlbumGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E69997AF395BF19F888D2900DD686436 /* DWAlbumGridCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 521B96E36B44BFE4479A6F6D8F8035B1 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9037856621A1EEFFBD2CE5E52819AC25 /* View+MASAdditions.m */; };
+		D4B9C95E838ADDF7BCE93F256FA956ED /* DWCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6061572092FD71A1DE8C395202D49B95 /* DWCameraManager.m */; };
+		D5710D8C11EA7C634A89838D35445062 /* DWCameraManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B264BAA507332170F24159427A397 /* DWCameraManagerViewController.m */; };
+		D60FBDE5D6D5D4CA44C187D7DFC186BC /* DWCameraManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 902A83703F24A56DEBED684467C57A3A /* DWCameraManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D67E23EAEC80F88B462917D316724A63 /* NSString+DWStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7093F12C1BCEBF0789FB5C2A75571 /* NSString+DWStringUtils.m */; };
+		D719C9DE9C8667EF20F07A973165968A /* DWFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 619C963A5C6155543A2607416546DC71 /* DWFileManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 695B5DE0608DB780BFBA7FB035688005 /* Masonry-dummy.m */; };
+		E017BAD2BC7A8A9B3268E05E1C990740 /* DWTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 634E12079E87A26CA98B852B934558ED /* DWTaskQueue.m */; };
+		E31FFA600932C8C15733CD9E661E93C1 /* DWTaskQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DD30F1D05A0F5EB73900FE0800BE9446 /* DWTaskQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E52C685FCA1D215E4A8452EFC2E4BE9C /* DWAlbumGridCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097A3CE6E5256C20D09BBB4F281F283 /* DWAlbumGridCellModel.m */; };
+		E530402B6D7F41DB31A04C7686B1CDEA /* DWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E290618E526E2ACE691561F0C313F /* DWLabel.m */; };
+		E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F529A20B73C32F4B7D3B46055BA04AFF /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E78BE7A04FE86165F853DD34B9D50155 /* DWTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA32DDA49316EAC14EFB39C2416BA9 /* DWTransaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8F3A692EE3809A1BE48DC8CB083BB99 /* DWCameraManagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 153C91673C4541FDADB3ABDF7F722709 /* DWCameraManagerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F88380E729F4259688D11159522B2FC9 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ECA13C9CD824437F80C8F00800E1EBCD /* UIDevice+DWDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D5866C2809AEB6887DEF0F206448D /* UIDevice+DWDeviceUtils.m */; };
+		EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 274302573D2B2E2102A15653714201F2 /* MASConstraint.m */; };
+		F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39EE836ACDE045305F57B36A37A8FF8B /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F5569039C9677EC994BBF8BAE7F24D81 /* DWAlbumGridCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C7DFF0D6F1BE63206177A5715A615A /* DWAlbumGridCellModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6DFDC4E18ABA02A7D445E06FF1E3E0A /* DWCameraManagerMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A028BFC916B09894B5EA54D5D343B18 /* DWCameraManagerMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF92AD6A4AA7B3274B6C1B82D5148E7D /* DWAlbumMediaHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D663D1F5C57938DA94FE6CE5FCB304 /* DWAlbumMediaHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1898793A9C8573FAD781F17547A62EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C701BBEE5D869E57EF5A4A9353C2A29;
+			remoteInfo = DWKit;
+		};
+		30B1CF6D7D47C021DBF9F700144A1891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F07B940E8BAC00390F3B619B404CFE;
+			remoteInfo = DWAlbumGridController;
+		};
+		51295209DE4D028707CD16A3F8869280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C701BBEE5D869E57EF5A4A9353C2A29;
+			remoteInfo = DWKit;
+		};
+		75AE10EA32887C5E31431D8B43FDE710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002880C0E19448C6749C2CECEB36E383 /* NSObject+DWObjectUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DWObjectUtils.m"; path = "DWKit/DWCategory/DWObjectUtils/NSObject+DWObjectUtils.m"; sourceTree = "<group>"; };
+		03A724770F9A03CFB1CCE365D5F81EE1 /* libDWKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDWKit.a; path = libDWKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0715E67FE639A0A433730933060AC742 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		0C3D7E8074203AE13F744FFF84D52FCF /* DWCameraManagerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWCameraManagerViewController.h; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerViewController.h; sourceTree = "<group>"; };
+		111EFA73E2C453222DE004E2B8287B57 /* DWAlbumGridController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumGridController.h; path = DWAlbumGridController/DWAlbumGridController.h; sourceTree = "<group>"; };
+		118CAA25805DA751E87AE6634B5338B4 /* UIDevice+DWDeviceUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+DWDeviceUtils.h"; path = "DWKit/DWCategory/DWDeviceUtils/UIDevice+DWDeviceUtils.h"; sourceTree = "<group>"; };
+		1363F3677E2C14C9730BA3FB1E3D2C3D /* DWGradientView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWGradientView.m; path = DWKit/DWComponent/DWGradientView/DWGradientView.m; sourceTree = "<group>"; };
+		145CBC05C24C72F1B74299FBB8356356 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		153C91673C4541FDADB3ABDF7F722709 /* DWCameraManagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWCameraManagerView.h; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerView.h; sourceTree = "<group>"; };
+		167302E73BBEB63E2F25851949DFCFB0 /* DWLimitArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWLimitArray.h; path = DWKit/DWUtils/DWLimitArray/DWLimitArray.h; sourceTree = "<group>"; };
+		16E7D97ACE75D56EDCE38DD936342612 /* DWAlbumManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlbumManager.m; path = DWKit/DWUtils/DWAlbumManager/DWAlbumManager.m; sourceTree = "<group>"; };
+		1820D8F7E08A795D82204CBB27A5B64F /* DWAlbumGridController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlbumGridController-prefix.pch"; sourceTree = "<group>"; };
+		18286576AA95A01854DADCDE310E5FC6 /* DWFixAdjustCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWFixAdjustCollectionView.h; path = DWKit/DWComponent/DWFixAdjustCollectionView/DWFixAdjustCollectionView.h; sourceTree = "<group>"; };
+		1A829B68587E952E5486F6E780F01E12 /* DWKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWKit-dummy.m"; sourceTree = "<group>"; };
+		1CDE3B1AE019C360B79D41BF96A2AD07 /* NSArray+DWArrayUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+DWArrayUtils.m"; path = "DWKit/DWCategory/DWArrayUtils/NSArray+DWArrayUtils.m"; sourceTree = "<group>"; };
+		1F188ADA35D8C24F5BD15F46F18028EB /* DWFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWFileManager.m; path = DWKit/DWUtils/DWFileManager/DWFileManager.m; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		206E68173FEEA58FACC3B9A91D986655 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		2097A3CE6E5256C20D09BBB4F281F283 /* DWAlbumGridCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlbumGridCellModel.m; path = DWAlbumGridController/DWAlbumGridCellModel.m; sourceTree = "<group>"; };
+		26D663D1F5C57938DA94FE6CE5FCB304 /* DWAlbumMediaHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumMediaHelper.h; path = DWAlbumGridController/DWAlbumMediaHelper.h; sourceTree = "<group>"; };
+		274302573D2B2E2102A15653714201F2 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		2BD9C7B17385C0C344BAB4625B3D1FE8 /* Pods-DWKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DWKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2DFA3FFB36863F2F050474BD75A23ECF /* NSArray+DWArrayUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+DWArrayUtils.h"; path = "DWKit/DWCategory/DWArrayUtils/NSArray+DWArrayUtils.h"; sourceTree = "<group>"; };
+		30FDC4766732EC184610AE3D96308A71 /* DWAlbumManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumManager.h; path = DWKit/DWUtils/DWAlbumManager/DWAlbumManager.h; sourceTree = "<group>"; };
+		313EF5F65BCB6AFB30BB3F3FDBD1F76A /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		389FDB1C0AC69178F6110741C5FA7CDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		399FF4489E9661A16A4A05050AA79E96 /* NSDate+DWDateUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DWDateUtils.h"; path = "DWKit/DWCategory/DWDateUtils/NSDate+DWDateUtils.h"; sourceTree = "<group>"; };
+		39EE836ACDE045305F57B36A37A8FF8B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		3A028BFC916B09894B5EA54D5D343B18 /* DWCameraManagerMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWCameraManagerMacro.h; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerMacro.h; sourceTree = "<group>"; };
+		4561DA2B8A43A32058CFAB41292D7240 /* DWDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWDispatcher.h; path = DWKit/DWUtils/DWDispatcher/DWDispatcher.h; sourceTree = "<group>"; };
+		4D6D5866C2809AEB6887DEF0F206448D /* UIDevice+DWDeviceUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+DWDeviceUtils.m"; path = "DWKit/DWCategory/DWDeviceUtils/UIDevice+DWDeviceUtils.m"; sourceTree = "<group>"; };
+		4D88335CF7C2A0A64958F1011D82A4E9 /* DWKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWKit-prefix.pch"; sourceTree = "<group>"; };
+		4E99C567A55851BF538A1F435B2EAADA /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		4EA4F915142113093F4B2DB2047F11DE /* DWAlbumSelectionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlbumSelectionManager.m; path = DWAlbumGridController/DWAlbumSelectionManager.m; sourceTree = "<group>"; };
+		521B96E36B44BFE4479A6F6D8F8035B1 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		53EDD42BE1D43D28317351FB34200BDD /* DWKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWKit.release.xcconfig; sourceTree = "<group>"; };
+		5539F1C935B725ACEFED6281AF0DDA80 /* DWCameraManagerLibraryHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWCameraManagerLibraryHelper.m; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerLibraryHelper.m; sourceTree = "<group>"; };
+		562168D4C4B5E1947A970C1BF2A59653 /* DWAlbumGridControllerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumGridControllerHeader.h; path = DWAlbumGridController/DWAlbumGridControllerHeader.h; sourceTree = "<group>"; };
+		5DD5236EA0D8A17E8EFBFADC67904B51 /* DWDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWDispatcher.m; path = DWKit/DWUtils/DWDispatcher/DWDispatcher.m; sourceTree = "<group>"; };
+		6061572092FD71A1DE8C395202D49B95 /* DWCameraManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWCameraManager.m; path = DWKit/DWUtils/DWCameraManager/DWCameraManager.m; sourceTree = "<group>"; };
+		6074F97641E3D8FC295C4F7E26E4DF9B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		619C963A5C6155543A2607416546DC71 /* DWFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWFileManager.h; path = DWKit/DWUtils/DWFileManager/DWFileManager.h; sourceTree = "<group>"; };
+		62670D8008DDC9CE006F4048FB54C6AC /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		62BA76543DB14A72585DAB17815C9E4B /* NSDate+DWDateUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DWDateUtils.m"; path = "DWKit/DWCategory/DWDateUtils/NSDate+DWDateUtils.m"; sourceTree = "<group>"; };
+		634E12079E87A26CA98B852B934558ED /* DWTaskQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWTaskQueue.m; path = DWKit/DWUtils/DWTaskQueue/DWTaskQueue.m; sourceTree = "<group>"; };
+		65C7DFF0D6F1BE63206177A5715A615A /* DWAlbumGridCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumGridCellModel.h; path = DWAlbumGridController/DWAlbumGridCellModel.h; sourceTree = "<group>"; };
+		695B5DE0608DB780BFBA7FB035688005 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		6B36727A2631B5D0DF37301BA18FD8AD /* DWOperationCancelFlag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWOperationCancelFlag.h; path = DWKit/DWUtils/DWOperationCancelFlag/DWOperationCancelFlag.h; sourceTree = "<group>"; };
+		70E9F13D80939D1079EF21DBF2E17C30 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		714DFE4D4EBAB55C06DBD2D967B03CFA /* DWAlbumGridCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlbumGridCell.m; path = DWAlbumGridController/DWAlbumGridCell.m; sourceTree = "<group>"; };
+		71B254876DADF70F296919094F100EB3 /* DWAlbumGridController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWAlbumGridController-dummy.m"; sourceTree = "<group>"; };
+		74DD4D3B91C5C7E4FE2445B3D546D7D1 /* DWCameraManagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWCameraManagerView.m; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerView.m; sourceTree = "<group>"; };
+		75BDD9C2E62EC26EA2DD84265D27E801 /* DWLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWLabel.h; path = DWKit/DWComponent/DWLabel/DWLabel.h; sourceTree = "<group>"; };
+		76DA32DDA49316EAC14EFB39C2416BA9 /* DWTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWTransaction.h; path = DWKit/DWUtils/DWTransaction/DWTransaction.h; sourceTree = "<group>"; };
+		77E77E4456550FCB3D5CDBD58452AF9C /* NSString+DWStringUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DWStringUtils.h"; path = "DWKit/DWCategory/DWStringUtils/NSString+DWStringUtils.h"; sourceTree = "<group>"; };
+		83539BCAC4A668CC21DE7098C65E889F /* DWCameraManagerLibraryHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWCameraManagerLibraryHelper.h; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerLibraryHelper.h; sourceTree = "<group>"; };
+		8838BFE5FB89B7C4A34B43F5E7A542F2 /* NSObject+DWObjectUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DWObjectUtils.h"; path = "DWKit/DWCategory/DWObjectUtils/NSObject+DWObjectUtils.h"; sourceTree = "<group>"; };
+		902A83703F24A56DEBED684467C57A3A /* DWCameraManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWCameraManager.h; path = DWKit/DWUtils/DWCameraManager/DWCameraManager.h; sourceTree = "<group>"; };
+		9037856621A1EEFFBD2CE5E52819AC25 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		90973BBC3C3C8B781041EC322F037086 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		98459D16B6C4988C1BA094EC96D6516F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		9B0B264BAA507332170F24159427A397 /* DWCameraManagerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWCameraManagerViewController.m; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerViewController.m; sourceTree = "<group>"; };
+		9D3BC8A7F65A70BB91AA445FAFC6B530 /* DWKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DWKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A74680988BF0BD5E895EC23E3132E87E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		A82676D4268A1C8105E52B3458370B48 /* DWAlbumGridController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWAlbumGridController.release.xcconfig; sourceTree = "<group>"; };
+		A93F63606986436DD3E1BC2FD8EC0265 /* DWAlbumSelectionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumSelectionManager.h; path = DWAlbumGridController/DWAlbumSelectionManager.h; sourceTree = "<group>"; };
+		A9A3785F3930EE82D2AB761C29544572 /* Pods-DWKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DWKitDemo-dummy.m"; sourceTree = "<group>"; };
+		AAE882AD4058D445464899661316EAE6 /* libPods-DWKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DWKitDemo.a"; path = "libPods-DWKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD89923C615F7709A3FCB4457D2FC155 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		AEBF18655B5338D2B0FE665B7EF77F1A /* DWLimitArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWLimitArray.m; path = DWKit/DWUtils/DWLimitArray/DWLimitArray.m; sourceTree = "<group>"; };
+		B61EDEB56D75161E0C0FC29E276EEB99 /* NSThread+DWThreadUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSThread+DWThreadUtils.m"; path = "DWKit/DWCategory/DWThreadUtils/NSThread+DWThreadUtils.m"; sourceTree = "<group>"; };
+		B794B5DCD941E5BC4E83E34F3AECE834 /* DWKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWKit.debug.xcconfig; sourceTree = "<group>"; };
+		BD11F908FDE77EE2B5089B38F65FDF79 /* libDWAlbumGridController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDWAlbumGridController.a; path = libDWAlbumGridController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE66014F7B4DCB9CE2C62D618DA683EE /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		C1D2464C4702B2D041F9524243FD2113 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		C2A196DE8E1B4D9B035121EEEC3BCBDD /* DWOperationCancelFlag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWOperationCancelFlag.m; path = DWKit/DWUtils/DWOperationCancelFlag/DWOperationCancelFlag.m; sourceTree = "<group>"; };
+		C478AFFBE79C42AF771D613F1434DEA4 /* Pods-DWKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DWKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		C558ACF49130E04EF15469C3EE86010A /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		CBFE9A16F41053F5BEFA91B0A59550D3 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		CDC7093F12C1BCEBF0789FB5C2A75571 /* NSString+DWStringUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+DWStringUtils.m"; path = "DWKit/DWCategory/DWStringUtils/NSString+DWStringUtils.m"; sourceTree = "<group>"; };
+		CF89891EA9F4632F97669A89FDA26119 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		D11ED4A29415E2BD60951189B26A54F7 /* DWFixAdjustCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWFixAdjustCollectionView.m; path = DWKit/DWComponent/DWFixAdjustCollectionView/DWFixAdjustCollectionView.m; sourceTree = "<group>"; };
+		D23FFDC1E9F9A16ED79180BD0524329D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		D35A05D238664648C9F55D6488E1AE55 /* DWAlbumGridController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlbumGridController.m; path = DWAlbumGridController/DWAlbumGridController.m; sourceTree = "<group>"; };
+		D72D8B389A732C73A6ED41678EC42E64 /* DWManualOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWManualOperation.h; path = DWKit/DWUtils/DWManualOperation/DWManualOperation.h; sourceTree = "<group>"; };
+		D8E47003B547AB04F6D1D5DA29D06BB0 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		DA9895F3D70749F901F18AF4B1859EC4 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		DAB80F737939A3488DC4F31F3CD06B27 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DB58491621FF5080E301A288E01CD731 /* DWAlbumMediaHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlbumMediaHelper.m; path = DWAlbumGridController/DWAlbumMediaHelper.m; sourceTree = "<group>"; };
+		DC0E290618E526E2ACE691561F0C313F /* DWLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWLabel.m; path = DWKit/DWComponent/DWLabel/DWLabel.m; sourceTree = "<group>"; };
+		DD30F1D05A0F5EB73900FE0800BE9446 /* DWTaskQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWTaskQueue.h; path = DWKit/DWUtils/DWTaskQueue/DWTaskQueue.h; sourceTree = "<group>"; };
+		DF54B8F8C6151CC13597B0E43BAF3AE9 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		DF91A6DF761EE9DD3762B90AF6B68C98 /* Pods-DWKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DWKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E4AFB2FB9D68E73935089F38FCC71CCA /* DWGradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWGradientView.h; path = DWKit/DWComponent/DWGradientView/DWGradientView.h; sourceTree = "<group>"; };
+		E51A2FB7523D5AF61A56F89A9FF5B699 /* DWTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWTransaction.m; path = DWKit/DWUtils/DWTransaction/DWTransaction.m; sourceTree = "<group>"; };
+		E69997AF395BF19F888D2900DD686436 /* DWAlbumGridCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlbumGridCell.h; path = DWAlbumGridController/DWAlbumGridCell.h; sourceTree = "<group>"; };
+		E855B958FC6E5375AE0DC13F8D748641 /* DWCameraManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWCameraManagerDelegate.h; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerDelegate.h; sourceTree = "<group>"; };
+		EBCACCF85A7756708306490DB19CF0CF /* DWManualOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWManualOperation.m; path = DWKit/DWUtils/DWManualOperation/DWManualOperation.m; sourceTree = "<group>"; };
+		EF5515EC1CFF62F16A9770AAF83FBC08 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F0945CFE43B2D96372C4379A6F12BB19 /* DWAlbumGridController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWAlbumGridController.debug.xcconfig; sourceTree = "<group>"; };
+		F529A20B73C32F4B7D3B46055BA04AFF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		F88380E729F4259688D11159522B2FC9 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		FB045310ACEFFB3FCA8A4A7ADDAC18A4 /* DWCameraManagerDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWCameraManagerDelegate.m; path = DWKit/DWUtils/DWCameraManager/DWCameraManagerDelegate.m; sourceTree = "<group>"; };
+		FB229BE03A0C5E4D635BACB97C2099D9 /* Pods-DWKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DWKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD140E52BB40E69792085D9B92391EB9 /* NSThread+DWThreadUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSThread+DWThreadUtils.h"; path = "DWKit/DWCategory/DWThreadUtils/NSThread+DWThreadUtils.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01095FBE532CF5AA0855A20BDA54BF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFDC6B3693C9F0212A78754A2A82BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF6BF99F5A6F9775B3FAAE0C1385A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC70CC516476476D0C2F8A4AEFCA49A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C18F663024F4619CA5488D0B515B46 /* DWKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE1969CA44D46216230CA354EFA89077 /* DWCategory */,
+				99A86BE251652547128BD8D34FE3AF7D /* DWComponent */,
+				F695BF73CA45394C4A4C9838DE356865 /* DWUtils */,
+				213FDCFAF96B42983C48107C73A4AF61 /* Pod */,
+				29495D2588527244DF57F0A3A603A978 /* Support Files */,
+			);
+			name = DWKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		0681D7375D05EB079A889FA0B48CBEB0 /* DWObjectUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8838BFE5FB89B7C4A34B43F5E7A542F2 /* NSObject+DWObjectUtils.h */,
+				002880C0E19448C6749C2CECEB36E383 /* NSObject+DWObjectUtils.m */,
+			);
+			name = DWObjectUtils;
+			sourceTree = "<group>";
+		};
+		0B86C6BD26BADCD9139EA11AABCB6BCC /* DWFixAdjustCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				18286576AA95A01854DADCDE310E5FC6 /* DWFixAdjustCollectionView.h */,
+				D11ED4A29415E2BD60951189B26A54F7 /* DWFixAdjustCollectionView.m */,
+			);
+			name = DWFixAdjustCollectionView;
+			sourceTree = "<group>";
+		};
+		1417E070F5CDD1D8B1B409E5970FC1E3 /* DWStringUtils */ = {
+			isa = PBXGroup;
+			children = (
+				77E77E4456550FCB3D5CDBD58452AF9C /* NSString+DWStringUtils.h */,
+				CDC7093F12C1BCEBF0789FB5C2A75571 /* NSString+DWStringUtils.m */,
+			);
+			name = DWStringUtils;
+			sourceTree = "<group>";
+		};
+		145D331E1F7C42D38BB247BE1B11E366 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				695B5DE0608DB780BFBA7FB035688005 /* Masonry-dummy.m */,
+				C558ACF49130E04EF15469C3EE86010A /* Masonry-prefix.pch */,
+				0715E67FE639A0A433730933060AC742 /* Masonry.debug.xcconfig */,
+				206E68173FEEA58FACC3B9A91D986655 /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		213FDCFAF96B42983C48107C73A4AF61 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9D3BC8A7F65A70BB91AA445FAFC6B530 /* DWKit.podspec */,
+				6074F97641E3D8FC295C4F7E26E4DF9B /* LICENSE */,
+				389FDB1C0AC69178F6110741C5FA7CDB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2900CB62142B3C9D4423D40626A49A0B /* DWTaskQueue */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F1D05A0F5EB73900FE0800BE9446 /* DWTaskQueue.h */,
+				634E12079E87A26CA98B852B934558ED /* DWTaskQueue.m */,
+			);
+			name = DWTaskQueue;
+			sourceTree = "<group>";
+		};
+		29495D2588527244DF57F0A3A603A978 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A829B68587E952E5486F6E780F01E12 /* DWKit-dummy.m */,
+				4D88335CF7C2A0A64958F1011D82A4E9 /* DWKit-prefix.pch */,
+				B794B5DCD941E5BC4E83E34F3AECE834 /* DWKit.debug.xcconfig */,
+				53EDD42BE1D43D28317351FB34200BDD /* DWKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "DEMO/Pods/Target Support Files/DWKit";
+			sourceTree = "<group>";
+		};
+		2BC0C2D7E0619B4766BAE179BAE12176 /* DWFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				619C963A5C6155543A2607416546DC71 /* DWFileManager.h */,
+				1F188ADA35D8C24F5BD15F46F18028EB /* DWFileManager.m */,
+			);
+			name = DWFileManager;
+			sourceTree = "<group>";
+		};
+		30380F68E83339582302623A357A0777 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03C18F663024F4619CA5488D0B515B46 /* DWKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3F75E68B2E9F0E7C19275AD7286F51A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				757FAE7F9B3886917454041C4CD2F1A9 /* DWAlbumGridController */,
+				57A0898A1542A0544B7CE9F50EDA082C /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		424E48F1554A02FF6C80FC0D0D97C534 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD11F908FDE77EE2B5089B38F65FDF79 /* libDWAlbumGridController.a */,
+				03A724770F9A03CFB1CCE365D5F81EE1 /* libDWKit.a */,
+				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
+				AAE882AD4058D445464899661316EAE6 /* libPods-DWKitDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A699F4928FC333CF16746F8A8DC11C /* DWArrayUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA3FFB36863F2F050474BD75A23ECF /* NSArray+DWArrayUtils.h */,
+				1CDE3B1AE019C360B79D41BF96A2AD07 /* NSArray+DWArrayUtils.m */,
+			);
+			name = DWArrayUtils;
+			sourceTree = "<group>";
+		};
+		53396B58A75B76079B7E76F50E19E64A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F90688ECAD0E24F292BB967AAEA9373 /* Pods-DWKitDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		543278CFAE5D4B2E4F9F1591F9900E40 /* DWManualOperation */ = {
+			isa = PBXGroup;
+			children = (
+				D72D8B389A732C73A6ED41678EC42E64 /* DWManualOperation.h */,
+				EBCACCF85A7756708306490DB19CF0CF /* DWManualOperation.m */,
+			);
+			name = DWManualOperation;
+			sourceTree = "<group>";
+		};
+		57A0898A1542A0544B7CE9F50EDA082C /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				C1D2464C4702B2D041F9524243FD2113 /* MASCompositeConstraint.h */,
+				D23FFDC1E9F9A16ED79180BD0524329D /* MASCompositeConstraint.m */,
+				F88380E729F4259688D11159522B2FC9 /* MASConstraint.h */,
+				274302573D2B2E2102A15653714201F2 /* MASConstraint.m */,
+				CBFE9A16F41053F5BEFA91B0A59550D3 /* MASConstraint+Private.h */,
+				D8E47003B547AB04F6D1D5DA29D06BB0 /* MASConstraintMaker.h */,
+				90973BBC3C3C8B781041EC322F037086 /* MASConstraintMaker.m */,
+				DF54B8F8C6151CC13597B0E43BAF3AE9 /* MASLayoutConstraint.h */,
+				A74680988BF0BD5E895EC23E3132E87E /* MASLayoutConstraint.m */,
+				313EF5F65BCB6AFB30BB3F3FDBD1F76A /* Masonry.h */,
+				BE66014F7B4DCB9CE2C62D618DA683EE /* MASUtilities.h */,
+				DA9895F3D70749F901F18AF4B1859EC4 /* MASViewAttribute.h */,
+				98459D16B6C4988C1BA094EC96D6516F /* MASViewAttribute.m */,
+				CF89891EA9F4632F97669A89FDA26119 /* MASViewConstraint.h */,
+				145CBC05C24C72F1B74299FBB8356356 /* MASViewConstraint.m */,
+				39EE836ACDE045305F57B36A37A8FF8B /* NSArray+MASAdditions.h */,
+				62670D8008DDC9CE006F4048FB54C6AC /* NSArray+MASAdditions.m */,
+				EF5515EC1CFF62F16A9770AAF83FBC08 /* NSArray+MASShorthandAdditions.h */,
+				521B96E36B44BFE4479A6F6D8F8035B1 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				4E99C567A55851BF538A1F435B2EAADA /* NSLayoutConstraint+MASDebugAdditions.m */,
+				70E9F13D80939D1079EF21DBF2E17C30 /* View+MASAdditions.h */,
+				9037856621A1EEFFBD2CE5E52819AC25 /* View+MASAdditions.m */,
+				DAB80F737939A3488DC4F31F3CD06B27 /* View+MASShorthandAdditions.h */,
+				F529A20B73C32F4B7D3B46055BA04AFF /* ViewController+MASAdditions.h */,
+				AD89923C615F7709A3FCB4457D2FC155 /* ViewController+MASAdditions.m */,
+				145D331E1F7C42D38BB247BE1B11E366 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		58DDEC1187F79E644C00901EE14ADCCC /* DWDeviceUtils */ = {
+			isa = PBXGroup;
+			children = (
+				118CAA25805DA751E87AE6634B5338B4 /* UIDevice+DWDeviceUtils.h */,
+				4D6D5866C2809AEB6887DEF0F206448D /* UIDevice+DWDeviceUtils.m */,
+			);
+			name = DWDeviceUtils;
+			sourceTree = "<group>";
+		};
+		672BF1EBB91764996852D505B5FD7904 /* DWDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				4561DA2B8A43A32058CFAB41292D7240 /* DWDispatcher.h */,
+				5DD5236EA0D8A17E8EFBFADC67904B51 /* DWDispatcher.m */,
+			);
+			name = DWDispatcher;
+			sourceTree = "<group>";
+		};
+		6B7B54BE0DF36A4358B0CD7DF63BEA88 /* DWCameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				902A83703F24A56DEBED684467C57A3A /* DWCameraManager.h */,
+				6061572092FD71A1DE8C395202D49B95 /* DWCameraManager.m */,
+				E855B958FC6E5375AE0DC13F8D748641 /* DWCameraManagerDelegate.h */,
+				FB045310ACEFFB3FCA8A4A7ADDAC18A4 /* DWCameraManagerDelegate.m */,
+				83539BCAC4A668CC21DE7098C65E889F /* DWCameraManagerLibraryHelper.h */,
+				5539F1C935B725ACEFED6281AF0DDA80 /* DWCameraManagerLibraryHelper.m */,
+				3A028BFC916B09894B5EA54D5D343B18 /* DWCameraManagerMacro.h */,
+				153C91673C4541FDADB3ABDF7F722709 /* DWCameraManagerView.h */,
+				74DD4D3B91C5C7E4FE2445B3D546D7D1 /* DWCameraManagerView.m */,
+				0C3D7E8074203AE13F744FFF84D52FCF /* DWCameraManagerViewController.h */,
+				9B0B264BAA507332170F24159427A397 /* DWCameraManagerViewController.m */,
+			);
+			name = DWCameraManager;
+			sourceTree = "<group>";
+		};
+		740CD08A43305636254564C29FE90D0D /* DWAlbumManager */ = {
+			isa = PBXGroup;
+			children = (
+				30FDC4766732EC184610AE3D96308A71 /* DWAlbumManager.h */,
+				16E7D97ACE75D56EDCE38DD936342612 /* DWAlbumManager.m */,
+			);
+			name = DWAlbumManager;
+			sourceTree = "<group>";
+		};
+		757FAE7F9B3886917454041C4CD2F1A9 /* DWAlbumGridController */ = {
+			isa = PBXGroup;
+			children = (
+				E69997AF395BF19F888D2900DD686436 /* DWAlbumGridCell.h */,
+				714DFE4D4EBAB55C06DBD2D967B03CFA /* DWAlbumGridCell.m */,
+				65C7DFF0D6F1BE63206177A5715A615A /* DWAlbumGridCellModel.h */,
+				2097A3CE6E5256C20D09BBB4F281F283 /* DWAlbumGridCellModel.m */,
+				111EFA73E2C453222DE004E2B8287B57 /* DWAlbumGridController.h */,
+				D35A05D238664648C9F55D6488E1AE55 /* DWAlbumGridController.m */,
+				562168D4C4B5E1947A970C1BF2A59653 /* DWAlbumGridControllerHeader.h */,
+				26D663D1F5C57938DA94FE6CE5FCB304 /* DWAlbumMediaHelper.h */,
+				DB58491621FF5080E301A288E01CD731 /* DWAlbumMediaHelper.m */,
+				A93F63606986436DD3E1BC2FD8EC0265 /* DWAlbumSelectionManager.h */,
+				4EA4F915142113093F4B2DB2047F11DE /* DWAlbumSelectionManager.m */,
+				F9E1AFAA1A627E2951EDB061A9BEA611 /* Support Files */,
+			);
+			name = DWAlbumGridController;
+			path = DWAlbumGridController;
+			sourceTree = "<group>";
+		};
+		7F90688ECAD0E24F292BB967AAEA9373 /* Pods-DWKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FB229BE03A0C5E4D635BACB97C2099D9 /* Pods-DWKitDemo-acknowledgements.markdown */,
+				C478AFFBE79C42AF771D613F1434DEA4 /* Pods-DWKitDemo-acknowledgements.plist */,
+				A9A3785F3930EE82D2AB761C29544572 /* Pods-DWKitDemo-dummy.m */,
+				DF91A6DF761EE9DD3762B90AF6B68C98 /* Pods-DWKitDemo.debug.xcconfig */,
+				2BD9C7B17385C0C344BAB4625B3D1FE8 /* Pods-DWKitDemo.release.xcconfig */,
+			);
+			name = "Pods-DWKitDemo";
+			path = "Target Support Files/Pods-DWKitDemo";
+			sourceTree = "<group>";
+		};
+		99A86BE251652547128BD8D34FE3AF7D /* DWComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0B86C6BD26BADCD9139EA11AABCB6BCC /* DWFixAdjustCollectionView */,
+				BDE66A58AC6DEBB8DF169B3218FB58D4 /* DWGradientView */,
+				DC58DCF18FCB5A97C45E9DE3C0612B0F /* DWLabel */,
+			);
+			name = DWComponent;
+			sourceTree = "<group>";
+		};
+		BDE66A58AC6DEBB8DF169B3218FB58D4 /* DWGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				E4AFB2FB9D68E73935089F38FCC71CCA /* DWGradientView.h */,
+				1363F3677E2C14C9730BA3FB1E3D2C3D /* DWGradientView.m */,
+			);
+			name = DWGradientView;
+			sourceTree = "<group>";
+		};
+		C3B01B3AAC4FA55C0402ECA8BB77A760 /* DWDateUtils */ = {
+			isa = PBXGroup;
+			children = (
+				399FF4489E9661A16A4A05050AA79E96 /* NSDate+DWDateUtils.h */,
+				62BA76543DB14A72585DAB17815C9E4B /* NSDate+DWDateUtils.m */,
+			);
+			name = DWDateUtils;
+			sourceTree = "<group>";
+		};
+		CE1969CA44D46216230CA354EFA89077 /* DWCategory */ = {
+			isa = PBXGroup;
+			children = (
+				43A699F4928FC333CF16746F8A8DC11C /* DWArrayUtils */,
+				C3B01B3AAC4FA55C0402ECA8BB77A760 /* DWDateUtils */,
+				58DDEC1187F79E644C00901EE14ADCCC /* DWDeviceUtils */,
+				0681D7375D05EB079A889FA0B48CBEB0 /* DWObjectUtils */,
+				1417E070F5CDD1D8B1B409E5970FC1E3 /* DWStringUtils */,
+				F82EDDA1B643AB48A6DA851442600D74 /* DWThreadUtils */,
+			);
+			name = DWCategory;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				30380F68E83339582302623A357A0777 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				3F75E68B2E9F0E7C19275AD7286F51A1 /* Pods */,
+				424E48F1554A02FF6C80FC0D0D97C534 /* Products */,
+				53396B58A75B76079B7E76F50E19E64A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D35FE341FE94CA5B164BCBF528572A76 /* DWLimitArray */ = {
+			isa = PBXGroup;
+			children = (
+				167302E73BBEB63E2F25851949DFCFB0 /* DWLimitArray.h */,
+				AEBF18655B5338D2B0FE665B7EF77F1A /* DWLimitArray.m */,
+			);
+			name = DWLimitArray;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC58DCF18FCB5A97C45E9DE3C0612B0F /* DWLabel */ = {
+			isa = PBXGroup;
+			children = (
+				75BDD9C2E62EC26EA2DD84265D27E801 /* DWLabel.h */,
+				DC0E290618E526E2ACE691561F0C313F /* DWLabel.m */,
+			);
+			name = DWLabel;
+			sourceTree = "<group>";
+		};
+		E7946C6890BE2F74E0F522D696CF63EB /* DWOperationCancelFlag */ = {
+			isa = PBXGroup;
+			children = (
+				6B36727A2631B5D0DF37301BA18FD8AD /* DWOperationCancelFlag.h */,
+				C2A196DE8E1B4D9B035121EEEC3BCBDD /* DWOperationCancelFlag.m */,
+			);
+			name = DWOperationCancelFlag;
+			sourceTree = "<group>";
+		};
+		F695BF73CA45394C4A4C9838DE356865 /* DWUtils */ = {
+			isa = PBXGroup;
+			children = (
+				740CD08A43305636254564C29FE90D0D /* DWAlbumManager */,
+				6B7B54BE0DF36A4358B0CD7DF63BEA88 /* DWCameraManager */,
+				672BF1EBB91764996852D505B5FD7904 /* DWDispatcher */,
+				2BC0C2D7E0619B4766BAE179BAE12176 /* DWFileManager */,
+				D35FE341FE94CA5B164BCBF528572A76 /* DWLimitArray */,
+				543278CFAE5D4B2E4F9F1591F9900E40 /* DWManualOperation */,
+				E7946C6890BE2F74E0F522D696CF63EB /* DWOperationCancelFlag */,
+				2900CB62142B3C9D4423D40626A49A0B /* DWTaskQueue */,
+				FF81A48712830EDE427ED20BD09A2204 /* DWTransaction */,
+			);
+			name = DWUtils;
+			sourceTree = "<group>";
+		};
+		F82EDDA1B643AB48A6DA851442600D74 /* DWThreadUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FD140E52BB40E69792085D9B92391EB9 /* NSThread+DWThreadUtils.h */,
+				B61EDEB56D75161E0C0FC29E276EEB99 /* NSThread+DWThreadUtils.m */,
+			);
+			name = DWThreadUtils;
+			sourceTree = "<group>";
+		};
+		F9E1AFAA1A627E2951EDB061A9BEA611 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71B254876DADF70F296919094F100EB3 /* DWAlbumGridController-dummy.m */,
+				1820D8F7E08A795D82204CBB27A5B64F /* DWAlbumGridController-prefix.pch */,
+				F0945CFE43B2D96372C4379A6F12BB19 /* DWAlbumGridController.debug.xcconfig */,
+				A82676D4268A1C8105E52B3458370B48 /* DWAlbumGridController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DWAlbumGridController";
+			sourceTree = "<group>";
+		};
+		FF81A48712830EDE427ED20BD09A2204 /* DWTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				76DA32DDA49316EAC14EFB39C2416BA9 /* DWTransaction.h */,
+				E51A2FB7523D5AF61A56F89A9FF5B699 /* DWTransaction.m */,
+			);
+			name = DWTransaction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2697A8D6B2989B073B236F7B4BF67F30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */,
+				4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */,
+				EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */,
+				9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */,
+				7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */,
+				B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */,
+				65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */,
+				42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */,
+				115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */,
+				F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */,
+				81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */,
+				C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */,
+				A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */,
+				E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4110AC34B6A44F1B003CA6DAB185E1FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8DDA7027374C40526AFC93E8949F62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C404709FC697F59DDABDB3338BB3B032 /* DWAlbumGridCell.h in Headers */,
+				F5569039C9677EC994BBF8BAE7F24D81 /* DWAlbumGridCellModel.h in Headers */,
+				45EE4BC1B667656F07EFFB88FEC8E6DB /* DWAlbumGridController.h in Headers */,
+				694ECC98560861327FBFBA8B117888E9 /* DWAlbumGridControllerHeader.h in Headers */,
+				FF92AD6A4AA7B3274B6C1B82D5148E7D /* DWAlbumMediaHelper.h in Headers */,
+				0EFE674565D45AF3FE6C9B1CBC8922E4 /* DWAlbumSelectionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8054598871B04974C38BE4D51746BD48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4CFE80FE29D09ACB89F70ECE34F1A6 /* DWAlbumManager.h in Headers */,
+				D60FBDE5D6D5D4CA44C187D7DFC186BC /* DWCameraManager.h in Headers */,
+				5110E624D8DDECA439A264C15DD6D418 /* DWCameraManagerDelegate.h in Headers */,
+				528D695B6AAC4424120F27506C68C2BA /* DWCameraManagerLibraryHelper.h in Headers */,
+				F6DFDC4E18ABA02A7D445E06FF1E3E0A /* DWCameraManagerMacro.h in Headers */,
+				E8F3A692EE3809A1BE48DC8CB083BB99 /* DWCameraManagerView.h in Headers */,
+				692496FEFDF251EB392B10928C6BD052 /* DWCameraManagerViewController.h in Headers */,
+				172FD8EBAB3192D58016F20D45C81A27 /* DWDispatcher.h in Headers */,
+				D719C9DE9C8667EF20F07A973165968A /* DWFileManager.h in Headers */,
+				44C84AA7207C64402BFE405F7B4D9825 /* DWFixAdjustCollectionView.h in Headers */,
+				0DE0D4F817A247F61AE8E2EF0DD63310 /* DWGradientView.h in Headers */,
+				00E2698C41A7A03745C366044C2AF290 /* DWLabel.h in Headers */,
+				AB2DCF1C396732A03CA0CAE2A57F227D /* DWLimitArray.h in Headers */,
+				C3A1D5F656F354D858EF1C4814A39ABA /* DWManualOperation.h in Headers */,
+				ADC22B6CB6CC6C83FDF4D1C59EAAE5B6 /* DWOperationCancelFlag.h in Headers */,
+				E31FFA600932C8C15733CD9E661E93C1 /* DWTaskQueue.h in Headers */,
+				E78BE7A04FE86165F853DD34B9D50155 /* DWTransaction.h in Headers */,
+				2483A6A805677356636D09ACF1DD2A20 /* NSArray+DWArrayUtils.h in Headers */,
+				11D0BB292BB31DD49E4321B1ED1E23F5 /* NSDate+DWDateUtils.h in Headers */,
+				21AB78157D15E366D0321AE95F0301B9 /* NSObject+DWObjectUtils.h in Headers */,
+				C0DB89EA8D25B9CBAEB2EE69EA7E4ED1 /* NSString+DWStringUtils.h in Headers */,
+				89EDACA29B512EAEEA1404B803201597 /* NSThread+DWThreadUtils.h in Headers */,
+				54E85EA8EB482CF81255C3A0CAFDCC17 /* UIDevice+DWDeviceUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C701BBEE5D869E57EF5A4A9353C2A29 /* DWKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7550421566D95DDD03194EF87A704C51 /* Build configuration list for PBXNativeTarget "DWKit" */;
+			buildPhases = (
+				8054598871B04974C38BE4D51746BD48 /* Headers */,
+				DD18B45F4FB5BE705F87A74ED16D0163 /* Sources */,
+				3CF6BF99F5A6F9775B3FAAE0C1385A2E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWKit;
+			productName = DWKit;
+			productReference = 03A724770F9A03CFB1CCE365D5F81EE1 /* libDWKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9F7EAACDDA564EC328F53A4AB8CF85 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				2697A8D6B2989B073B236F7B4BF67F30 /* Headers */,
+				8C28688BF2BD730285E2F5DE30F8C021 /* Sources */,
+				01095FBE532CF5AA0855A20BDA54BF0B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		56D599D42C3A44773DDCB3E0554218F8 /* Pods-DWKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23DBE30FDDE2039748BA5A716FCEEB78 /* Build configuration list for PBXNativeTarget "Pods-DWKitDemo" */;
+			buildPhases = (
+				4110AC34B6A44F1B003CA6DAB185E1FC /* Headers */,
+				8929CF8B63F992CFAD5ABE3AEFB13D7D /* Sources */,
+				1FFDC6B3693C9F0212A78754A2A82BDB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCBBC32FC18FCA5D207118550DD02A07 /* PBXTargetDependency */,
+				1445FF64FB5E568A659B59AA0E81766C /* PBXTargetDependency */,
+				8D168D416B51681BB06132A8718B1CB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-DWKitDemo";
+			productName = "Pods-DWKitDemo";
+			productReference = AAE882AD4058D445464899661316EAE6 /* libPods-DWKitDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A5F07B940E8BAC00390F3B619B404CFE /* DWAlbumGridController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F515F10C1635C5AC6CBF12575441D42C /* Build configuration list for PBXNativeTarget "DWAlbumGridController" */;
+			buildPhases = (
+				7D8DDA7027374C40526AFC93E8949F62 /* Headers */,
+				E5BA196A0E56320E9520D31E1E5F14A5 /* Sources */,
+				CC70CC516476476D0C2F8A4AEFCA49A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60011D3CA25452D1C89757E3035D8C06 /* PBXTargetDependency */,
+			);
+			name = DWAlbumGridController;
+			productName = DWAlbumGridController;
+			productReference = BD11F908FDE77EE2B5089B38F65FDF79 /* libDWAlbumGridController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 424E48F1554A02FF6C80FC0D0D97C534 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F07B940E8BAC00390F3B619B404CFE /* DWAlbumGridController */,
+				0C701BBEE5D869E57EF5A4A9353C2A29 /* DWKit */,
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				56D599D42C3A44773DDCB3E0554218F8 /* Pods-DWKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8929CF8B63F992CFAD5ABE3AEFB13D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B7DD4E0D75D92B4FDD706DE81743FC /* Pods-DWKitDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28688BF2BD730285E2F5DE30F8C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */,
+				EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */,
+				1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */,
+				0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */,
+				D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */,
+				A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */,
+				572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */,
+				B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */,
+				59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */,
+				C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18B45F4FB5BE705F87A74ED16D0163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D68CD52DEFCDFA0A3CC7023D1465D2 /* DWAlbumManager.m in Sources */,
+				D4B9C95E838ADDF7BCE93F256FA956ED /* DWCameraManager.m in Sources */,
+				38C7EAFB5EFA951DE8ED56F5BB88D06E /* DWCameraManagerDelegate.m in Sources */,
+				19F88544C8D656B2C513AFDB603DBE76 /* DWCameraManagerLibraryHelper.m in Sources */,
+				5D3B2396760FC116056E96602F9E972E /* DWCameraManagerView.m in Sources */,
+				D5710D8C11EA7C634A89838D35445062 /* DWCameraManagerViewController.m in Sources */,
+				39E37B4DA579F1D379A1BAF43E0BE0DB /* DWDispatcher.m in Sources */,
+				A942AE56C916A66989F6620C88C00AC0 /* DWFileManager.m in Sources */,
+				0DE0EE4FA5E3FBF8912DBF465BB8DA52 /* DWFixAdjustCollectionView.m in Sources */,
+				AA18992123E33AF96DC38981CE67B6ED /* DWGradientView.m in Sources */,
+				83ECBD950C31CD944FABF1FC834433D7 /* DWKit-dummy.m in Sources */,
+				E530402B6D7F41DB31A04C7686B1CDEA /* DWLabel.m in Sources */,
+				6C2E52EF825BA7300B7ED6ADA0A77AB6 /* DWLimitArray.m in Sources */,
+				AD3BA5E718A9EDB8CC575B167F7FCBBB /* DWManualOperation.m in Sources */,
+				54DF1CD8212FF412DA618EF28C23B0DB /* DWOperationCancelFlag.m in Sources */,
+				E017BAD2BC7A8A9B3268E05E1C990740 /* DWTaskQueue.m in Sources */,
+				43694D739ABB21CCB7650BA5877A85BF /* DWTransaction.m in Sources */,
+				B52D6AAE204DDE0B0531DBB023813A94 /* NSArray+DWArrayUtils.m in Sources */,
+				75F5A5321057488FF042EAEE8A1019E4 /* NSDate+DWDateUtils.m in Sources */,
+				278ECFC8045634EECB398C33B489B392 /* NSObject+DWObjectUtils.m in Sources */,
+				D67E23EAEC80F88B462917D316724A63 /* NSString+DWStringUtils.m in Sources */,
+				23059C61175B44394217C2D0687797AF /* NSThread+DWThreadUtils.m in Sources */,
+				ECA13C9CD824437F80C8F00800E1EBCD /* UIDevice+DWDeviceUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5BA196A0E56320E9520D31E1E5F14A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C350B98AE780C86FDB12C41C577E912 /* DWAlbumGridCell.m in Sources */,
+				E52C685FCA1D215E4A8452EFC2E4BE9C /* DWAlbumGridCellModel.m in Sources */,
+				201BBB9AABA7C5DB791BBDD0F9029165 /* DWAlbumGridController-dummy.m in Sources */,
+				8FB9A2AA41FFBE0D78BB760729027B85 /* DWAlbumGridController.m in Sources */,
+				24A1FE3F6A2081C1B481C66194AEBDB5 /* DWAlbumMediaHelper.m in Sources */,
+				3E15A093B862814C99B3E9ADB6F7AB28 /* DWAlbumSelectionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1445FF64FB5E568A659B59AA0E81766C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DWKit;
+			target = 0C701BBEE5D869E57EF5A4A9353C2A29 /* DWKit */;
+			targetProxy = 1898793A9C8573FAD781F17547A62EBF /* PBXContainerItemProxy */;
+		};
+		60011D3CA25452D1C89757E3035D8C06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DWKit;
+			target = 0C701BBEE5D869E57EF5A4A9353C2A29 /* DWKit */;
+			targetProxy = 51295209DE4D028707CD16A3F8869280 /* PBXContainerItemProxy */;
+		};
+		8D168D416B51681BB06132A8718B1CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 75AE10EA32887C5E31431D8B43FDE710 /* PBXContainerItemProxy */;
+		};
+		CCBBC32FC18FCA5D207118550DD02A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DWAlbumGridController;
+			target = A5F07B940E8BAC00390F3B619B404CFE /* DWAlbumGridController */;
+			targetProxy = 30B1CF6D7D47C021DBF9F700144A1891 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14DEE7AF6741DC76DDF7C4ADD62A623C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		19A30832787CFDC3824856CD6992EF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD9C7B17385C0C344BAB4625B3D1FE8 /* Pods-DWKitDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3114EE13290864E8DD69176489F4C595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53EDD42BE1D43D28317351FB34200BDD /* DWKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DWKit/DWKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DWKit;
+				PRODUCT_NAME = DWKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D3ED26D434E42A07A6555995914221C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0945CFE43B2D96372C4379A6F12BB19 /* DWAlbumGridController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DWAlbumGridController/DWAlbumGridController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DWAlbumGridController;
+				PRODUCT_NAME = DWAlbumGridController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7856385289BF2EE0F5AF153C06C99D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B794B5DCD941E5BC4E83E34F3AECE834 /* DWKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DWKit/DWKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DWKit;
+				PRODUCT_NAME = DWKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AEEA5CC30001CB70A788717A32DBAB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206E68173FEEA58FACC3B9A91D986655 /* Masonry.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B963CC86710B44699D7402ACC2CFB8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C7697634BF3F5E66106298F344486AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82676D4268A1C8105E52B3458370B48 /* DWAlbumGridController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DWAlbumGridController/DWAlbumGridController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DWAlbumGridController;
+				PRODUCT_NAME = DWAlbumGridController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9CCBC0D08A1D7B4A37EE5DA17E9CF30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF91A6DF761EE9DD3762B90AF6B68C98 /* Pods-DWKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F99870D874C7FA838E84D9C55C010CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0715E67FE639A0A433730933060AC742 /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B9F7EAACDDA564EC328F53A4AB8CF85 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99870D874C7FA838E84D9C55C010CF1 /* Debug */,
+				8AEEA5CC30001CB70A788717A32DBAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23DBE30FDDE2039748BA5A716FCEEB78 /* Build configuration list for PBXNativeTarget "Pods-DWKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CCBC0D08A1D7B4A37EE5DA17E9CF30 /* Debug */,
+				19A30832787CFDC3824856CD6992EF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B963CC86710B44699D7402ACC2CFB8D3 /* Debug */,
+				14DEE7AF6741DC76DDF7C4ADD62A623C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7550421566D95DDD03194EF87A704C51 /* Build configuration list for PBXNativeTarget "DWKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7856385289BF2EE0F5AF153C06C99D5D /* Debug */,
+				3114EE13290864E8DD69176489F4C595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F515F10C1635C5AC6CBF12575441D42C /* Build configuration list for PBXNativeTarget "DWAlbumGridController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3ED26D434E42A07A6555995914221C /* Debug */,
+				C7697634BF3F5E66106298F344486AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
