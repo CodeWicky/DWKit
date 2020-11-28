@@ -31,9 +31,6 @@
 }
 
 -(void)cameraAction:(UIButton *)sender {
-    
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunguarded-availability"
     [DWAlbumManager requestAuthorizationForLevelIfNeeded:(DWAlbumManagerAccessLevelReadWrite) completion:^(PHAuthorizationStatus status) {
         dispatch_async(dispatch_get_main_queue(), ^{
             if (status == PHAuthorizationStatusAuthorized) {
@@ -46,7 +43,6 @@
             }
         });
     }];
-#pragma clang diagnostic pop
 }
 
 #pragma mark --- tool method ---
