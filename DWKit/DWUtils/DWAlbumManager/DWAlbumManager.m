@@ -12,8 +12,9 @@ NSString * const DWAlbumMediaSourceURL = @"DWAlbumMediaSourceURL";
 NSString * const DWAlbumErrorDomain = @"com.DWAlbumManager.error";
 const NSInteger DWAlbumNilObjectErrorCode = 10001;
 const NSInteger DWAlbumInvalidTypeErrorCode = 10002;
-const NSInteger DWAlbumSaveErrorCode = 10003;
-const NSInteger DWAlbumExportErrorCode = 10004;
+const NSInteger DWAlbumAuthorizationErrorCode = 10003;
+const NSInteger DWAlbumSaveErrorCode = 10004;
+const NSInteger DWAlbumExportErrorCode = 10005;
 
 @interface DWAlbumModel ()
 
@@ -306,17 +307,37 @@ const NSInteger DWAlbumExportErrorCode = 10004;
 
 #pragma mark --- interface method ---
 +(PHAuthorizationStatus)authorizationStatus {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability"
+    return [self authorizationStatusForLevel:PHAccessLevelReadWrite];
+#pragma clang diagnostic pop
+}
+
++(PHAuthorizationStatus)authorizationStatusForLevel:(PHAccessLevel)level {
+    if (@available(iOS 14.0,*)) {
+        return [PHPhotoLibrary authorizationStatusForAccessLevel:level];
+    }
     return [PHPhotoLibrary authorizationStatus];
 }
 
 +(void)requestAuthorization:(void (^)(PHAuthorizationStatus))completion {
-    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability"
+    [self requestAuthorizationWithLevel:PHAccessLevelReadWrite completion:completion];
+#pragma clang diagnostic pop
+}
+
++(void)requestAuthorizationWithLevel:(PHAccessLevel)level completion:(void (^)(PHAuthorizationStatus))completion {
+    void(^handler)(PHAuthorizationStatus status) = ^(PHAuthorizationStatus status) {
         if (completion) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                completion(status);
-            });
+            completion(status);
         }
-    }];
+    };
+    if (@available(iOS 14.0,*)) {
+        [PHPhotoLibrary requestAuthorizationForAccessLevel:level handler:handler];
+    } else {
+        [PHPhotoLibrary requestAuthorization:handler];
+    }
 }
 
 -(void)fetchCameraRollWithOption:(DWAlbumFetchOption *)opt completion:(DWAlbumFetchCameraRollCompletion)completion {
@@ -1035,9 +1056,41 @@ const NSInteger DWAlbumExportErrorCode = 10004;
     return img;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability"
+-(void)requestAuthorizationIfNeeded:(PHAccessLevel)level completion:(void(^)(PHAuthorizationStatus status))completion {
+
+    PHAuthorizationStatus status = [[self class] authorizationStatusForLevel:level];
+    if (status == PHAuthorizationStatusNotDetermined) {
+        [[self class] requestAuthorizationWithLevel:level completion:^(PHAuthorizationStatus status) {
+            if (completion) {
+                completion(status);
+            }
+        }];
+    } else {
+        if (completion) {
+            completion(status);
+        }
+    }
+}
+
+
 ///获取资源
 -(void)saveMedia:(id)media url:(NSURL *)url mediaType:(DWAlbumMediaType)mediaType toAlbum:(NSString *)albumName location:(CLLocation *)loc createIfNotExist:(BOOL)createIfNotExist completion:(DWAlbumSaveMediaCompletion)completion {
     
+    [self requestAuthorizationIfNeeded:(PHAccessLevelAddOnly) completion:^(PHAuthorizationStatus status) {
+        if (status != PHAuthorizationStatusAuthorized) {
+            if (completion) {
+                completion(self,NO,nil,[NSError errorWithDomain:DWAlbumErrorDomain code:DWAlbumAuthorizationErrorCode userInfo:@{@"errMsg":@"Authorization error on not authorized.Media save has been interrupted."}]);
+            }
+        } else {
+            [self doSaveMedia:media url:url mediaType:mediaType toAlbum:albumName location:loc createIfNotExist:createIfNotExist completion:completion];
+        }
+    }];
+}
+#pragma clang diagnostic pop
+
+-(void)doSaveMedia:(id)media url:(NSURL *)url mediaType:(DWAlbumMediaType)mediaType toAlbum:(NSString *)albumName location:(CLLocation *)loc createIfNotExist:(BOOL)createIfNotExist completion:(DWAlbumSaveMediaCompletion)completion {
     ///状态码，0 合法，1 空参数，2 错误类型参数，3 不支持的存储类型，4 降级为图片，5 降级为视频
     NSInteger validCode = 0;
     
@@ -1271,7 +1324,22 @@ const NSInteger DWAlbumExportErrorCode = 10004;
     }];
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability"
 -(void)exportVideoWithAVAsset:(AVURLAsset *)avasset asset:(PHAsset *)asset option:(DWAlbumExportVideoOption *)opt completion:(DWAlbumExportVideoCompletion)completion {
+    [self requestAuthorizationIfNeeded:PHAccessLevelReadWrite completion:^(PHAuthorizationStatus status) {
+        if (status != PHAuthorizationStatusAuthorized) {
+            if (completion) {
+                completion(self,NO,nil,[NSError errorWithDomain:DWAlbumErrorDomain code:DWAlbumAuthorizationErrorCode userInfo:@{@"errMsg":@"Authorization error on not authorized.Export video has been interrupted."}]);
+            }
+        } else {
+            [self doExportVideoWithAVAsset:avasset asset:asset option:opt completion:completion];
+        }
+    }];
+}
+#pragma clang diagnostic pop
+
+-(void)doExportVideoWithAVAsset:(AVURLAsset *)avasset asset:(PHAsset *)asset option:(DWAlbumExportVideoOption *)opt completion:(DWAlbumExportVideoCompletion)completion {
     NSArray * presets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avasset];
     DWAlbumExportPresetType presetType = DWAlbumExportPresetTypePassthrough;
     NSString * presetString = AVAssetExportPresetPassthrough;

@@ -19,6 +19,7 @@ static const PHImageRequestID PHCachedImageRequestID = -1;
 UIKIT_EXTERN NSString * _Nonnull const DWAlbumMediaSourceURL;
 UIKIT_EXTERN const NSInteger DWAlbumNilObjectErrorCode;
 UIKIT_EXTERN const NSInteger DWAlbumInvalidTypeErrorCode;
+UIKIT_EXTERN const NSInteger DWAlbumAuthorizationErrorCode;
 UIKIT_EXTERN const NSInteger DWAlbumSaveErrorCode;
 UIKIT_EXTERN const NSInteger DWAlbumExportErrorCode;
 
@@ -48,7 +49,7 @@ typedef void(^DWAlbumExportVideoCompletion)(DWAlbumManager * _Nullable mgr ,BOOL
  @return 返回状态
  */
 +(PHAuthorizationStatus)authorizationStatus;
-
++(PHAuthorizationStatus)authorizationStatusForLevel:(PHAccessLevel)level API_AVAILABLE(macosx(11.0), ios(14), tvos(14));
 
 /**
  请求授权
@@ -56,6 +57,7 @@ typedef void(^DWAlbumExportVideoCompletion)(DWAlbumManager * _Nullable mgr ,BOOL
  @param completion 用户授权完成回调
  */
 +(void)requestAuthorization:(nullable void(^)(PHAuthorizationStatus status))completion;
++(void)requestAuthorizationWithLevel:(PHAccessLevel)level completion:(nullable void (^)(PHAuthorizationStatus status))completion API_AVAILABLE(macosx(11.0), ios(14), tvos(14));
 
 
 /**
