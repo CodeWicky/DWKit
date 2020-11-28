@@ -23,6 +23,11 @@ UIKIT_EXTERN const NSInteger DWAlbumAuthorizationErrorCode;
 UIKIT_EXTERN const NSInteger DWAlbumSaveErrorCode;
 UIKIT_EXTERN const NSInteger DWAlbumExportErrorCode;
 
+typedef NS_ENUM(NSInteger, DWAlbumManagerAccessLevel) {
+    DWAlbumManagerAccessLevelAddOnly = 1,
+    DWAlbumManagerAccessLevelReadWrite = 2,
+};
+
 @class DWAlbumManager,DWAlbumFetchOption,DWAlbumModel,DWAssetModel,DWImageAssetModel,DWVideoAssetModel,DWImageDataAssetModel,DWLivePhotoAssetModel,DWAlbumExportVideoOption;
 
 
@@ -49,16 +54,15 @@ typedef void(^DWAlbumExportVideoCompletion)(DWAlbumManager * _Nullable mgr ,BOOL
  @return 返回状态
  */
 +(PHAuthorizationStatus)authorizationStatus;
-+(PHAuthorizationStatus)authorizationStatusForLevel:(PHAccessLevel)level API_AVAILABLE(macosx(11.0), ios(14), tvos(14));
-
++(PHAuthorizationStatus)authorizationStatusForLevel:(DWAlbumManagerAccessLevel)level;
 /**
  请求授权
 
  @param completion 用户授权完成回调
  */
 +(void)requestAuthorization:(nullable void(^)(PHAuthorizationStatus status))completion;
-+(void)requestAuthorizationWithLevel:(PHAccessLevel)level completion:(nullable void (^)(PHAuthorizationStatus status))completion API_AVAILABLE(macosx(11.0), ios(14), tvos(14));
-
++(void)requestAuthorizationForLevel:(DWAlbumManagerAccessLevel)level completion:(nullable void (^)(PHAuthorizationStatus status))completion;
++(void)requestAuthorizationForLevelIfNeeded:(DWAlbumManagerAccessLevel)level completion:(nullable void (^)(PHAuthorizationStatus status))completion;
 
 /**
  获取相册中全部照片集合

@@ -306,39 +306,42 @@ const NSInteger DWAlbumExportErrorCode = 10005;
 @implementation DWAlbumManager
 
 #pragma mark --- interface method ---
-+(PHAuthorizationStatus)authorizationStatus {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability"
-    return [self authorizationStatusForLevel:PHAccessLevelReadWrite];
-#pragma clang diagnostic pop
++(PHAuthorizationStatus)authorizationStatus {
+    return [self authorizationStatusForLevel:DWAlbumManagerAccessLevelReadWrite];
 }
 
-+(PHAuthorizationStatus)authorizationStatusForLevel:(PHAccessLevel)level {
++(PHAuthorizationStatus)authorizationStatusForLevel:(DWAlbumManagerAccessLevel)level {
     if (@available(iOS 14.0,*)) {
-        return [PHPhotoLibrary authorizationStatusForAccessLevel:level];
+        return [PHPhotoLibrary authorizationStatusForAccessLevel:(PHAccessLevel)level];
     }
     return [PHPhotoLibrary authorizationStatus];
 }
 
 +(void)requestAuthorization:(void (^)(PHAuthorizationStatus))completion {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunguarded-availability"
-    [self requestAuthorizationWithLevel:PHAccessLevelReadWrite completion:completion];
-#pragma clang diagnostic pop
+    [self requestAuthorizationForLevel:DWAlbumManagerAccessLevelReadWrite completion:completion];
 }
 
-+(void)requestAuthorizationWithLevel:(PHAccessLevel)level completion:(void (^)(PHAuthorizationStatus))completion {
-    void(^handler)(PHAuthorizationStatus status) = ^(PHAuthorizationStatus status) {
++(void)requestAuthorizationForLevel:(DWAlbumManagerAccessLevel)level completion:(void (^)(PHAuthorizationStatus status))completion {
+    if (@available(iOS 14.0,*)) {
+        [PHPhotoLibrary requestAuthorizationForAccessLevel:(PHAccessLevel)level handler:completion];
+    } else {
+        [PHPhotoLibrary requestAuthorization:completion];
+    }
+}
+
++(void)requestAuthorizationForLevelIfNeeded:(DWAlbumManagerAccessLevel)level completion:(void (^)(PHAuthorizationStatus status))completion {
+    PHAuthorizationStatus status = [self authorizationStatusForLevel:level];
+    if (status == PHAuthorizationStatusNotDetermined) {
+        [self requestAuthorizationForLevel:level completion:completion];
+    } else {
         if (completion) {
             completion(status);
         }
-    };
-    if (@available(iOS 14.0,*)) {
-        [PHPhotoLibrary requestAuthorizationForAccessLevel:level handler:handler];
-    } else {
-        [PHPhotoLibrary requestAuthorization:handler];
     }
 }
+#pragma clang diagnostic pop
 
 -(void)fetchCameraRollWithOption:(DWAlbumFetchOption *)opt completion:(DWAlbumFetchCameraRollCompletion)completion {
     PHFetchOptions * phOpt = [self phOptFromDWOpt:opt];
@@ -1058,27 +1061,9 @@ const NSInteger DWAlbumExportErrorCode = 10005;
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability"
--(void)requestAuthorizationIfNeeded:(PHAccessLevel)level completion:(void(^)(PHAuthorizationStatus status))completion {
-
-    PHAuthorizationStatus status = [[self class] authorizationStatusForLevel:level];
-    if (status == PHAuthorizationStatusNotDetermined) {
-        [[self class] requestAuthorizationWithLevel:level completion:^(PHAuthorizationStatus status) {
-            if (completion) {
-                completion(status);
-            }
-        }];
-    } else {
-        if (completion) {
-            completion(status);
-        }
-    }
-}
-
-
 ///获取资源
 -(void)saveMedia:(id)media url:(NSURL *)url mediaType:(DWAlbumMediaType)mediaType toAlbum:(NSString *)albumName location:(CLLocation *)loc createIfNotExist:(BOOL)createIfNotExist completion:(DWAlbumSaveMediaCompletion)completion {
-    
-    [self requestAuthorizationIfNeeded:(PHAccessLevelAddOnly) completion:^(PHAuthorizationStatus status) {
+    [[self class] requestAuthorizationForLevel:DWAlbumManagerAccessLevelAddOnly completion:^(PHAuthorizationStatus status) {
         if (status != PHAuthorizationStatusAuthorized) {
             if (completion) {
                 completion(self,NO,nil,[NSError errorWithDomain:DWAlbumErrorDomain code:DWAlbumAuthorizationErrorCode userInfo:@{@"errMsg":@"Authorization error on not authorized.Media save has been interrupted."}]);
@@ -1327,7 +1312,7 @@ const NSInteger DWAlbumExportErrorCode = 10005;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability"
 -(void)exportVideoWithAVAsset:(AVURLAsset *)avasset asset:(PHAsset *)asset option:(DWAlbumExportVideoOption *)opt completion:(DWAlbumExportVideoCompletion)completion {
-    [self requestAuthorizationIfNeeded:PHAccessLevelReadWrite completion:^(PHAuthorizationStatus status) {
+    [[self class] requestAuthorizationForLevelIfNeeded:DWAlbumManagerAccessLevelReadWrite completion:^(PHAuthorizationStatus status) {
         if (status != PHAuthorizationStatusAuthorized) {
             if (completion) {
                 completion(self,NO,nil,[NSError errorWithDomain:DWAlbumErrorDomain code:DWAlbumAuthorizationErrorCode userInfo:@{@"errMsg":@"Authorization error on not authorized.Export video has been interrupted."}]);

@@ -31,9 +31,11 @@
 }
 
 -(void)cameraAction:(UIButton *)sender {
-    PHAuthorizationStatus status = [DWAlbumManager authorizationStatus];
-    if (status == PHAuthorizationStatusNotDetermined) {
-        [DWAlbumManager requestAuthorization:^(PHAuthorizationStatus status) {
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability"
+    [DWAlbumManager requestAuthorizationForLevelIfNeeded:(DWAlbumManagerAccessLevelReadWrite) completion:^(PHAuthorizationStatus status) {
+        dispatch_async(dispatch_get_main_queue(), ^{
             if (status == PHAuthorizationStatusAuthorized) {
                 [self.albumManager fetchCameraRollWithOption:nil completion:^(DWAlbumManager * _Nullable mgr, DWAlbumModel * _Nullable obj) {
                     [self configAlbum:obj];
@@ -42,15 +44,9 @@
             } else {
                 NSLog(@"咋还不给我权限呢！");
             }
-        }];
-    } else if (status == PHAuthorizationStatusAuthorized) {
-        [self.albumManager fetchCameraRollWithOption:nil completion:^(DWAlbumManager * _Nullable mgr, DWAlbumModel * _Nullable obj) {
-            [self configAlbum:obj];
-            [self presentViewController:self.gridVC animated:YES completion:nil];
-        }];
-    } else {
-        NSLog(@"你之前就把权限拒绝了，去设置改吧，要不你就卸载吧，咋还不给我权限呢！");
-    }
+        });
+    }];
+#pragma clang diagnostic pop
 }
 
 #pragma mark --- tool method ---
