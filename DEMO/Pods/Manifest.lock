@@ -31,6 +31,7 @@ PODS:
     - DWKit/DWUtils/DWCameraManager (= 0.0.0.19)
     - DWKit/DWUtils/DWDispatcher (= 0.0.0.19)
     - DWKit/DWUtils/DWFileManager (= 0.0.0.19)
+    - DWKit/DWUtils/DWForwardingTarget (= 0.0.0.19)
     - DWKit/DWUtils/DWLimitArray (= 0.0.0.19)
     - DWKit/DWUtils/DWManualOperation (= 0.0.0.19)
     - DWKit/DWUtils/DWOperationCancelFlag (= 0.0.0.19)
@@ -40,6 +41,7 @@ PODS:
   - DWKit/DWUtils/DWCameraManager (0.0.0.19)
   - DWKit/DWUtils/DWDispatcher (0.0.0.19)
   - DWKit/DWUtils/DWFileManager (0.0.0.19)
+  - DWKit/DWUtils/DWForwardingTarget (0.0.0.19)
   - DWKit/DWUtils/DWLimitArray (0.0.0.19)
   - DWKit/DWUtils/DWManualOperation (0.0.0.19)
   - DWKit/DWUtils/DWOperationCancelFlag (0.0.0.19)
@@ -53,9 +55,8 @@ DEPENDENCIES:
   - Masonry (~> 1.1.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - DWAlbumGridController
-  trunk:
     - Masonry
 
 EXTERNAL SOURCES:
@@ -64,9 +65,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DWAlbumGridController: 5b10b0e30a501ca69730858de96d0e88b66dcdab
-  DWKit: 4384b7626b351d677daaeca5a43a358ec1eef64b
+  DWKit: 07845a6a40f79ba7e77918c2f19fd32f2104aa6c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: 6894e63de3d31c1fdca365040e474274edb1a469
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.7.2

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B2172F5246E9B3B00C00B13 /* DWDateUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2172F4246E9B3B00C00B13 /* DWDateUtilsVC.m */; };
 		9B2172F8246E9BF100C00B13 /* DWGradientViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2172F7246E9BF100C00B13 /* DWGradientViewVC.m */; };
+		9B2FE1C825890B7A00A18039 /* DWForwardingTargetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FE1C725890B7A00A18039 /* DWForwardingTargetVC.m */; };
 		9B4CFABB23238DFC0016F8B2 /* DWManualOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4CFABA23238DFC0016F8B2 /* DWManualOperationVC.m */; };
 		9B4E1F072322B73D0033124E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F062322B73D0033124E /* AppDelegate.m */; };
 		9B4E1F0A2322B73D0033124E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1F092322B73D0033124E /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		9B2172F4246E9B3B00C00B13 /* DWDateUtilsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWDateUtilsVC.m; sourceTree = "<group>"; };
 		9B2172F6246E9BF100C00B13 /* DWGradientViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWGradientViewVC.h; sourceTree = "<group>"; };
 		9B2172F7246E9BF100C00B13 /* DWGradientViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWGradientViewVC.m; sourceTree = "<group>"; };
+		9B2FE1C625890B7A00A18039 /* DWForwardingTargetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWForwardingTargetVC.h; sourceTree = "<group>"; };
+		9B2FE1C725890B7A00A18039 /* DWForwardingTargetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWForwardingTargetVC.m; sourceTree = "<group>"; };
 		9B4CFAB923238DFC0016F8B2 /* DWManualOperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWManualOperationVC.h; sourceTree = "<group>"; };
 		9B4CFABA23238DFC0016F8B2 /* DWManualOperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWManualOperationVC.m; sourceTree = "<group>"; };
 		9B4E1F022322B73D0033124E /* DWKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,15 @@
 				9B2172F7246E9BF100C00B13 /* DWGradientViewVC.m */,
 			);
 			path = DWGradientView;
+			sourceTree = "<group>";
+		};
+		9B2FE1C525890AF900A18039 /* DWForwardingTarget */ = {
+			isa = PBXGroup;
+			children = (
+				9B2FE1C625890B7A00A18039 /* DWForwardingTargetVC.h */,
+				9B2FE1C725890B7A00A18039 /* DWForwardingTargetVC.m */,
+			);
+			path = DWForwardingTarget;
 			sourceTree = "<group>";
 		};
 		9B4CFAB823238D4C0016F8B2 /* DWManualOperation */ = {
@@ -285,6 +297,7 @@
 		9B72BF0F232ABBE5005B9C7C /* DWUtils */ = {
 			isa = PBXGroup;
 			children = (
+				9B2FE1C525890AF900A18039 /* DWForwardingTarget */,
 				9B58004624A890570092691F /* DWCameraManager */,
 				9BF910EA24852D230011C534 /* DWLimitArray */,
 				9BF910E924852CDD0011C534 /* DWTaskQueue */,
@@ -496,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2FE1C825890B7A00A18039 /* DWForwardingTargetVC.m in Sources */,
 				9B62938E233F84D900A02FFC /* DWDispatcherVC.m in Sources */,
 				9B4E1F262322BFB10033124E /* DemoBaseViewController.m in Sources */,
 				9BA570D5232B87B700F593BE /* DemoBaseActionViewController.m in Sources */,

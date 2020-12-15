@@ -17,6 +17,7 @@
 		<string>DWCameraManager</string>
 		<string>DWDispatcher</string>
 		<string>DWFileManager</string>
+		<string>DWForwardingTarget</string>
 		<string>DWLimitArray</string>
 		<string>DWManualOperation</string>
 		<string>DWOperationCancelFlag</string>

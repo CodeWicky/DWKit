@@ -48,6 +48,12 @@
           "frameworks": "UIKit"
         },
         {
+          "name": "DWForwardingTarget",
+          "source_files": "DWKit/DWUtils/DWForwardingTarget/**/*.{h,m}",
+          "public_header_files": "DWKit/DWUtils/DWForwardingTarget/**/DWForwardingTarget.h",
+          "frameworks": "Foundation"
+        },
+        {
           "name": "DWLimitArray",
           "source_files": "DWKit/DWUtils/DWLimitArray/**/*.{h,m}",
           "public_header_files": "DWKit/DWUtils/DWLimitArray/**/DWLimitArray.h",
