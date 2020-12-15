@@ -39,6 +39,12 @@ s.subspec 'DWUtils' do |d|
     ss.frameworks = 'UIKit'
   end
   
+  d.subspec 'DWForwardingTarget' do |ss|
+    ss.source_files = 'DWKit/DWUtils/DWForwardingTarget/**/*.{h,m}'
+    ss.public_header_files = 'DWKit/DWUtils/DWForwardingTarget/**/DWForwardingTarget.h'
+    ss.frameworks = 'Foundation'
+  end
+  
   d.subspec 'DWLimitArray' do |ss|
     ss.source_files = 'DWKit/DWUtils/DWLimitArray/**/*.{h,m}'
     ss.public_header_files = 'DWKit/DWUtils/DWLimitArray/**/DWLimitArray.h'
