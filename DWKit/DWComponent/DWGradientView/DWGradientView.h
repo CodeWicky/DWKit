@@ -10,6 +10,26 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*
+ v0.0.0.21
+ 增加gradientView 快捷方法
+ */
+
+/*
+ Axis Location Tip:
+ 
+ (1)    (2)
+ 
+ 
+ (3)    (4)
+ */
+typedef NS_ENUM(NSUInteger, DWGradientViewAxis) {
+    DWGradientViewAxisHorizontal,//1 -> 2
+    DWGradientViewAxisVertical,//1 -> 3
+    DWGradientViewAxisDiagonalLeft,//1 -> 4
+    DWGradientViewAxisDiagonalRight,//3 -> 2
+};
+
 @interface DWGradientView : UIView
 
 ///CGColors
@@ -20,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic ,assign) CGPoint startPoint;
 
 @property (nonatomic ,assign) CGPoint endPoint;
+
++(instancetype)gradientViewWithStartColor:(UIColor *)startColor endColor:(UIColor *)endColor axis:(DWGradientViewAxis)axis;
 
 @end
 

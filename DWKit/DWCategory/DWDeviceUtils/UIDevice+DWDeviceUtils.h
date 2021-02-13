@@ -9,6 +9,9 @@
 /**
  DWDeviceUtils
  提供Device相关信息及便捷方法
+ 
+ v0.0.0.21
+ 新增新设备（iPhone12系列、iPad Air 3代系列、iPad 8代、HomePod mini、appleWatch SE 系列、appleWatch 6代系列、airPods）的model映射及cpu映射
  */
 
 #import <UIKit/UIKit.h>

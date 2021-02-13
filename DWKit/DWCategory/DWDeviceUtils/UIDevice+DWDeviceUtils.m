@@ -228,6 +228,11 @@ NS_INLINE NSDictionary * deviceModelMap () {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         modelMap = @{
+            ///airPods
+            @"AirPods1,1":@"AirPods (1st generation)",
+            @"AirPods2,1":@"AirPods (2nd generation)",
+            @"iProd8,1":@"AirPods Pro",
+            
             ///apple tv
             @"AppleTV1,1":@"Apple TV (1st generation)",
             @"AppleTV2,1":@"Apple TV (2nd generation)",
@@ -255,10 +260,19 @@ NS_INLINE NSDictionary * deviceModelMap () {
             @"Watch5,2":@"Apple Watch Series 5",
             @"Watch5,3":@"Apple Watch Series 5",
             @"Watch5,4":@"Apple Watch Series 5",
+            @"Watch5,9":@"Apple Watch SE",
+            @"Watch5,10":@"Apple Watch SE",
+            @"Watch5,11":@"Apple Watch SE",
+            @"Watch5,12":@"Apple Watch SE",
+            @"Watch6,1":@"Apple Watch Series 6",
+            @"Watch6,2":@"Apple Watch Series 6",
+            @"Watch6,3":@"Apple Watch Series 6",
+            @"Watch6,4":@"Apple Watch Series 6",
             
             ///home pod
             @"AudioAccessory1,1":@"HomePod",
             @"AudioAccessory1,2":@"HomePod",
+            @"AudioAccessory5,1":@"HomePod mini",
             
             ///iPad
             @"iPad1,1":@"iPad",
@@ -278,6 +292,8 @@ NS_INLINE NSDictionary * deviceModelMap () {
             @"iPad7,6":@"iPad (6th generation)",
             @"iPad7,11":@"iPad (7th generation)",
             @"iPad7,12":@"iPad (7th generation)",
+            @"iPad11,6":@"iPad (8th generation)",
+            @"iPad11,7":@"iPad (8th generation)",
             
             ///iPad Air
             @"iPad4,1":@"iPad Air",
@@ -287,6 +303,8 @@ NS_INLINE NSDictionary * deviceModelMap () {
             @"iPad5,4":@"iPad Air 2",
             @"iPad11,3":@"iPad Air (3rd generation)",
             @"iPad11,4":@"iPad Air (3rd generation)",
+            @"iPad13,1":@"iPad Air (4th generation)",
+            @"iPad13,2":@"iPad Air (4th generation)",
             
             ///iPad Pro
             @"iPad6,7":@"iPad Pro (12.9-inch)",
@@ -362,6 +380,10 @@ NS_INLINE NSDictionary * deviceModelMap () {
             @"iPhone12,3":@"iPhone 11 Pro",
             @"iPhone12,5":@"iPhone 11 Pro Max",
             @"iPhone12,8":@"iPhone SE (2nd generation)",
+            @"iPhone13,1":@"iPhone 12 mini",
+            @"iPhone13,2":@"iPhone 12",
+            @"iPhone13,3":@"iPhone 12 Pro",
+            @"iPhone13,4":@"iPhone 12 Pro Max",
             
             ///iPod touch
             @"iPod1,1":@"iPod touch",
@@ -385,6 +407,11 @@ NS_INLINE NSDictionary * deviceCPUCoreMap () {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         CPUCoreMap = @{
+            ///airPods
+            @"AirPods1,1":@"Unknown",
+            @"AirPods2,1":@"Unknown",
+            @"iProd8,1":@"Unknown",
+            
             ///apple tv
             @"AppleTV1,1":@"Unknown",
             @"AppleTV2,1":@"ARMv7",
@@ -412,10 +439,19 @@ NS_INLINE NSDictionary * deviceCPUCoreMap () {
             @"Watch5,2":@"Unknown",
             @"Watch5,3":@"Unknown",
             @"Watch5,4":@"Unknown",
+            @"Watch5,9":@"Unknown",
+            @"Watch5,10":@"Unknown",
+            @"Watch5,11":@"Unknown",
+            @"Watch5,12":@"Unknown",
+            @"Watch6,1":@"Unknown",
+            @"Watch6,2":@"Unknown",
+            @"Watch6,3":@"Unknown",
+            @"Watch6,4":@"Unknown",
             
             ///home pod
             @"AudioAccessory1,1":@"ARMv8",
             @"AudioAccessory1,2":@"ARMv8",
+            @"AudioAccessory5,1":@"ARMv8.3-A",
             
             ///iPad
             @"iPad1,1":@"ARMv7",
@@ -435,6 +471,8 @@ NS_INLINE NSDictionary * deviceCPUCoreMap () {
             @"iPad7,6":@"ARMv8",
             @"iPad7,11":@"ARMv8",
             @"iPad7,12":@"ARMv8",
+            @"iPad11,6":@"ARMv8.3-A",
+            @"iPad11,7":@"ARMv8.3-A",
             
             ///iPad Air
             @"iPad4,1":@"ARMv8",
@@ -444,6 +482,8 @@ NS_INLINE NSDictionary * deviceCPUCoreMap () {
             @"iPad5,4":@"ARMv8",
             @"iPad11,3":@"ARMv8",
             @"iPad11,4":@"ARMv8",
+            @"iPad13,1":@"ARMv8.3-A",
+            @"iPad13,2":@"ARMv8.3-A",
             
             ///iPad Pro
             @"iPad6,7":@"ARMv8-A",
@@ -519,6 +559,10 @@ NS_INLINE NSDictionary * deviceCPUCoreMap () {
             @"iPhone12,3":@"ARMv8.4-A",
             @"iPhone12,5":@"ARMv8.4-A",
             @"iPhone12,8":@"ARMv8.4-A",
+            @"iPhone13,1":@"ARMv8.3-A",
+            @"iPhone13,2":@"ARMv8.3-A",
+            @"iPhone13,3":@"ARMv8.3-A",
+            @"iPhone13,4":@"ARMv8.3-A",
             
             ///iPod touch
             @"iPod1,1":@"Unknown",

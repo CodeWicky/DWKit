@@ -69,7 +69,7 @@
 
 -(void)removeInnerConstraintsIfNeeded {
     if (self.innerConstraints) {
-        [self removeConstraints:self.constraints];
+        [self removeConstraints:self.innerConstraints];
         self.innerConstraints = nil;
     }
 }
@@ -184,11 +184,16 @@
 #pragma mark --- tap action ---
 -(void)onTap:(UITapGestureRecognizer *)sender {
     if (self.tapAction) {
-        sender.enabled = NO;
+        NSTimeInterval timeInterval = self.actionTimeInterval;
+        if (timeInterval > 0) {
+            sender.enabled = NO;
+        }
         self.tapAction(self);
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            sender.enabled = YES;
-        });
+        if (timeInterval > 0) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timeInterval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                sender.enabled = YES;
+            });
+        }
     }
 }
 
@@ -198,6 +203,20 @@
         _tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTap:)];
     }
     return _tapGes;
+}
+
+#pragma mark --- 全局 ---
+#pragma mark --- tool method ---
+-(void)setupDefaultValue {
+    self.actionTimeInterval = 0.5;
+}
+
+#pragma mark --- override ---
+-(instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self setupDefaultValue];
+    }
+    return self;
 }
 
 @end
