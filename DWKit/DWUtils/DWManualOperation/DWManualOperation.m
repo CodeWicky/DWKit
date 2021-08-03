@@ -98,7 +98,6 @@
 }
 
 -(void)start {
-    NSLog(@"start");
     ///如果是被取消状态则置为完成状态并返回，为了配合NSOperationQueue使用
     if (self.isCancelled) {
         [self willChangeValueForKey:@"isFinished"];
@@ -120,15 +119,15 @@
     [super start];
 }
 
--(void)cancel {
-    [super cancel];
-}
-
 -(void)main {///系统实现中 -start 方法中会调用 -main 方法
     [self willChangeValueForKey:@"isExecuting"];
     _executing = YES;
     [self didChangeValueForKey:@"isExecuting"];
     [super main];
+    if (_handlerCount == 0) {
+        [self finishOperation];
+        return;
+    }
     __weak typeof(self)weakSelf = self;
     NSEnumerationOptions opt = NSEnumerationConcurrent;
     if (!self.concurrentHandler) {
@@ -149,10 +148,6 @@
         }
         obj(weakSelf);
     }];
-}
-
--(void)dealloc {
-    NSLog(@"dealloc");
 }
 
 #pragma mark --- tool func ---
