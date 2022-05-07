@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'DWKit'
-s.version = '0.0.0.22'
+s.version = '0.0.0.23'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.summary = '打造一个自己用的工具集。'
 s.homepage = 'https://github.com/CodeWicky/DWKit'
