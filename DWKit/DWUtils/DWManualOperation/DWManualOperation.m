@@ -31,7 +31,7 @@
 
 @property (nonatomic ,strong) dispatch_semaphore_t concurrentSema;
 
-@property (nonatomic ,assign) NSUInteger innerSemaCount;
+@property (nonatomic ,assign) NSInteger innerSemaCount;
 
 @property (nonatomic ,assign) BOOL innerWaitingFinish;
 
@@ -78,11 +78,11 @@
     _finished = YES;
     _executing = NO;
     _innerWaitingFinish = YES;
-    while (self.innerSemaCount > 0) {
+    ///这里需要等于0是因为要保证signal与wait成对调用，这样才能保证semaphore的当前值与初始值相同，这样释放时才不会崩溃
+    while (self.innerSemaCount >= 0 && self.concurrentSema) {
         dispatch_semaphore_signal(self.concurrentSema);
         self.innerSemaCount --;
     }
-    _innerWaitingFinish = NO;
     [self didChangeValueForKey:@"isExecuting"];
     [self didChangeValueForKey:@"isFinished"];
 }
@@ -135,20 +135,23 @@
     }
     BOOL needSema = self.innerConcurrentCount > 0;
     [self.handlerContainer enumerateObjectsWithOptions:(opt) usingBlock:^(OperationHandler  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (needSema) {
-            if (weakSelf.concurrentSema) {
-                dispatch_semaphore_wait(weakSelf.concurrentSema, DISPATCH_TIME_FOREVER);
+        if (needSema && weakSelf.concurrentSema) {
+            dispatch_semaphore_wait(weakSelf.concurrentSema, DISPATCH_TIME_FOREVER);
+            ///如果这里为空，有可能是已经finish
+            if (weakSelf.innerWaitingFinish) {
+                *stop = YES;
+                return ;
+            }
+            
+            @synchronized (weakSelf.concurrentSema) {
                 weakSelf.innerSemaCount ++;
-                ///如果这里为空，有可能是已经finish
-                if (weakSelf.innerWaitingFinish) {
-                    *stop = YES;
-                    return ;
-                }
             }
         }
         obj(weakSelf);
     }];
 }
+
+///不用重写cancel，因为cancel的也会走到completion，里面会free
 
 #pragma mark --- tool func ---
 static inline void freeOperation(DWManualOperation * op) {
@@ -182,6 +185,11 @@ static inline void freeOperation(DWManualOperation * op) {
 }
 
 -(void)setInnerConcurrentCount:(NSUInteger)innerConcurrentCount {
+    
+    if (self.isFinished || self.isCancelled || self.isExecuting) {
+        return;
+    }
+    
     if (_innerConcurrentCount != innerConcurrentCount) {
         _innerConcurrentCount = innerConcurrentCount;
         self.concurrentSema = nil;
